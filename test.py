@@ -14,8 +14,11 @@ gen.FLAGS.backing_chords = 'Dmaj7'
 
 @app.route('/generate', methods=['POST'])
 def generate():   
-    print(request.headers)
-    print("body: %s" % request.get_data())
+    print(request.form.get('primer_melody'))
+    print(request.form.get('backing_chords'))
+
+    gen.FLAGS.primer_melody = request.form.get('primer_melody')
+    gen.FLAGS.backing_chords = request.form.get('backing_chords')
 
     jsonstr = gen.main("")
     print(jsonstr)
