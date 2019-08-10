@@ -3,6 +3,8 @@ from flask import Flask, jsonify, render_template, request
 import sys
 import json
 
+#FLASK_APP=test.py flask run
+
 app = Flask(__name__)
 
 gen.FLAGS.config = 'chord_pitches_improv'
