@@ -28,9 +28,9 @@ def generate():
     if request.form.get('backing_chords'):
         gen.FLAGS.backing_chords = request.form.get('backing_chords')
 
-    jsonstr = gen.main("")
-    print(jsonstr)
-    return jsonstr
+    str_to_return = gen.main("")
+    print(str_to_return)
+    return str_to_return
 
 @app.route('/tutorial_end')
 def tutorial_end():

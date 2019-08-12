@@ -238,11 +238,11 @@ def run_with_flags(generator):
   """
 
     # Additional part for utjam starts 
-  json_to_export = generator.generate(input_sequence, generator_options)
+    str_to_export = generator.generate(input_sequence, generator_options)
     # execution_time = time.perf_counter() - start_time
     # print(execution_time)
     # Additional part ends
-  return(json_to_export)
+  return(str_to_export)
 
 
 """

@@ -211,9 +211,13 @@ class ImprovRnnSequenceGenerator(mm.BaseSequenceGenerator):
                 end_time = textlist_list[3].split(' ')[-1]
 
             dict_to_export[float(start_time)] = [float(end_time)-float(start_time),int(pitch)]
-    with open('test.txt', mode='w') as f:
-      json_to_export = json.dumps(dict_to_export)
-      return json_to_export
+    
+    print(dict_to_export)
+    with io.StringIO() as f:
+      sys.stdout = f
+      print(dict_to_export)
+      str_to_export = f.getvalue()
+    return str_to_export
     
     """
     assert (generated_sequence.total_time - generate_section.end_time) <= 1e-5
