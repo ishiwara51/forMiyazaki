@@ -23,9 +23,8 @@ def generate():
     print(request.form.get('primer_melody'))
     print(request.form.get('backing_chords'))
 
-    if request.form.get('primer_melody'):
+    if request.form.get('primer_melody') and request.form.get('backing_chords'):
         gen.FLAGS.primer_melody = request.form.get('primer_melody')
-    if request.form.get('backing_chords'):
         gen.FLAGS.backing_chords = request.form.get('backing_chords')
 
     str_to_return = gen.main("")
