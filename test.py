@@ -73,9 +73,9 @@ def chorus_end():
                     + str(request.form.get('composition_name'))
                     + '\', cast(\''
                     + str(datetime.datetime.now())
-                    + '\' as datetime), '
+                    + '\' as datetime), \''
                     + str(request.form.get('sequence'))
-                    + ')')
+                    + '\')')
         ExecuteQuery(stmt)
         return 'Query: ' + stmt
     else:
@@ -83,25 +83,14 @@ def chorus_end():
 
 @app.route('/tutorial_end', methods=['POST'])
 def tutorial_end():
-    if request.form.get('user_id') and request.form.get('sequence') and request.form.get('composition_name'):
-        stmt1 = str('insert into play_record (user_id, composition_name, played_at, sequence) value ('
-                    + str(request.form.get('user_id'))
-                    + ', \''
-                    + str(request.form.get('composition_name'))
-                    + '\', cast(\''
-                    + str(datetime.datetime.now())
-                    + '\' as datetime), '
-                    + str(request.form.get('sequence'))
-                    + ')')
-        ExecuteQuery(stmt1)
-        
-        stmt2 = str('update user_info set updated_at=cast(\''
+    if request.form.get('user_id'):
+        stmt = str('update user_info set updated_at=cast(\''
                     + str(datetime.datetime.now())
                     + '\' as datetime) where user_id='
                     + request.form.get('user_id')
                     + ')')
-        ExecuteQuery(stmt2)
-        return 'Query: ' + stmt1 + ' AND ' + stmt2
+        ExecuteQuery(stmt)
+        return 'Query: ' + stmt
     else:
         return 'Some value is missing in your request.'
 
