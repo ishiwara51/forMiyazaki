@@ -54,9 +54,9 @@ def first_login():
     if request.form.get('user_id'):
         ExecuteQuery('insert into user_info (user_id, created_at, lesson_completed, updated_at) values ('
                     + str(request.form.get('user_id'))
-                    + ', '
+                    + ', cast(\''
                     + str(datetime.date.today())
-                    + ', 0, '
+                    + '\' as date), 0, '
                     + str(datetime.datetime.now()))
     else:
         return 'Your device was not able to be certificated.'
@@ -68,9 +68,9 @@ def chorus_end():
                     + str(request.form.get('user_id'))
                     + ', \''
                     + str(request.form.get('composition_name'))
-                    + '\', '
+                    + '\', cast(\''
                     + str(datetime.datetime.now())
-                    + ', '
+                    + '\' as datetime), '
                     + str(request.form.get('sequence'))
                     + ')')
     else:
@@ -83,14 +83,14 @@ def tutorial_end(id):
                     + str(request.form.get('user_id'))
                     + ', \''
                     + str(request.form.get('composition_name'))
-                    + '\', '
+                    + '\', cast(\''
                     + str(datetime.datetime.now())
-                    + ', '
+                    + '\' as datetime), '
                     + str(request.form.get('sequence'))
                     + ')')
-        ExecuteQuery('update user_info set updated_at='
+        ExecuteQuery('update user_info set updated_at=cast(\''
                     + str(datetime.datetime.now())
-                    + ' where user_id='
+                    + '\' as datetime) where user_id='
                     + request.form.get('user_id')
                     + ')')
     else:
