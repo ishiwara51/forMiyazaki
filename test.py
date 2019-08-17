@@ -89,7 +89,7 @@ def tutorial_end():
                     + '\' as datetime) where user_id='
                     + request.form.get('user_id'))
         ExecuteQuery(stmt)
-        return 'Query: ' + stmt
+        return ExecuteQuery('select * from user_info')
     else:
         return 'Some value is missing in your request.'
 
