@@ -49,7 +49,7 @@ def generate():
 
     return str_to_return
 
-@app.route('/first_login')
+@app.route('/first_login', methods=['POST'])
 def first_login():
     if request.form.get('user_id'):
         ExecuteQuery('insert into user_info (user_id, created_at, lesson_completed, updated_at) values ('
@@ -61,7 +61,7 @@ def first_login():
     else:
         return 'Your device was not able to be certificated.'
 
-@app.route('/chorus_end')
+@app.route('/chorus_end', methods=['POST'])
 def chorus_end():
     if request.form.get('user_id') and request.form.get('play_record') and request.form.get('composition_name'):
         ExecuteQuery('insert into play_record (user_id, composition_name, played_at, sequence) value ('
@@ -76,7 +76,7 @@ def chorus_end():
     else:
         return 'Some value is missing in your request.'
 
-@app.route('/tutorial_end')
+@app.route('/tutorial_end', methods=['POST'])
 def tutorial_end(id):
     if request.form.get('user_id') and request.form.get('play_record') and request.form.get('composition_name'):
         ExecuteQuery('insert into play_record (user_id, composition_name, played_at, sequence) value ('
@@ -96,9 +96,5 @@ def tutorial_end(id):
     else:
         return 'Some value is missing in your request.'
 
-
-
-    
-
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80, threaded=True)    
+    app.run(host='0.0.0.0', port=5000, threaded=True)    
