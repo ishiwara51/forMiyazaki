@@ -58,7 +58,7 @@ def first_login():
                     + str(datetime.date.today())
                     + '\' as date), 0, cast(\''
                     + str(datetime.datetime.now())
-                    + '\' as datetime)')
+                    + '\' as datetime))')
     else:
         return 'Your device was not able to be certificated.'
 
