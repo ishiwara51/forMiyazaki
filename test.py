@@ -56,8 +56,9 @@ def first_login():
                     + str(request.form.get('user_id'))
                     + ', cast(\''
                     + str(datetime.date.today())
-                    + '\' as date), 0, '
-                    + str(datetime.datetime.now()))
+                    + '\' as date), 0, cast(\''
+                    + str(datetime.datetime.now())
+                    + '\' as datetime)')
     else:
         return 'Your device was not able to be certificated.'
 
