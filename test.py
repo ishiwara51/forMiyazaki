@@ -59,6 +59,7 @@ def first_login():
                     + '\' as date), 0, cast(\''
                     + str(datetime.datetime.now())
                     + '\' as datetime))')
+        return 'Query succeded.'
     else:
         return 'Your device was not able to be certificated.'
 
@@ -74,6 +75,7 @@ def chorus_end():
                     + '\' as datetime), '
                     + str(request.form.get('sequence'))
                     + ')')
+        return 'Query succeded.'
     else:
         return 'Some value is missing in your request.'
 
@@ -94,6 +96,7 @@ def tutorial_end(id):
                     + '\' as datetime) where user_id='
                     + request.form.get('user_id')
                     + ')')
+        return 'Query succeded.'
     else:
         return 'Some value is missing in your request.'
 
