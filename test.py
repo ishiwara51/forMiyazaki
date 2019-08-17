@@ -91,7 +91,7 @@ def tutorial_end(id):
                     + '\', cast(\''
                     + str(datetime.datetime.now())
                     + '\' as datetime), '
-                    + str(request.form.get('sequence'))
+                    + str(request.form.get('play_record'))
                     + ')')
         ExecuteQuery(stmt1)
         
