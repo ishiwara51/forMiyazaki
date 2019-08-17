@@ -86,7 +86,7 @@ def tutorial_end():
     if request.form.get('user_id'):
         stmt = str('update user_info set updated_at=cast(\''
                     + str(datetime.datetime.now())
-                    + '\' as datetime) where user_id=
+                    + '\' as datetime) where user_id='
                     + request.form.get('user_id')
                     + ')')
         ExecuteQuery(stmt)
