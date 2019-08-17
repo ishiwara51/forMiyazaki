@@ -82,7 +82,7 @@ def chorus_end():
         return 'Some value is missing in your request.'
 
 @app.route('/tutorial_end', methods=['POST'])
-def tutorial_end(id):
+def tutorial_end():
     if request.form.get('user_id') and request.form.get('play_record') and request.form.get('composition_name'):
         stmt1 = str('insert into play_record (user_id, composition_name, played_at, sequence) value ('
                     + str(request.form.get('user_id'))
