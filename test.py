@@ -52,21 +52,22 @@ def generate():
 @app.route('/first_login', methods=['POST'])
 def first_login():
     if request.form.get('user_id'):
-        ExecuteQuery('insert into user_info (user_id, created_at, lesson_completed, updated_at) values ('
+        stmt = str('insert into user_info (user_id, created_at, lesson_completed, updated_at) values ('
                     + str(request.form.get('user_id'))
                     + ', cast(\''
                     + str(datetime.date.today())
                     + '\' as date), 0, cast(\''
                     + str(datetime.datetime.now())
                     + '\' as datetime))')
-        return 'Query succeded.'
+        ExecuteQuery(stmt)
+        return 'Query: ' + stmt
     else:
         return 'Your device was not able to be certificated.'
 
 @app.route('/chorus_end', methods=['POST'])
 def chorus_end():
     if request.form.get('user_id') and request.form.get('play_record') and request.form.get('composition_name'):
-        ExecuteQuery('insert into play_record (user_id, composition_name, played_at, sequence) value ('
+        stmt = str('insert into play_record (user_id, composition_name, played_at, sequence) value ('
                     + str(request.form.get('user_id'))
                     + ', \''
                     + str(request.form.get('composition_name'))
@@ -75,14 +76,15 @@ def chorus_end():
                     + '\' as datetime), '
                     + str(request.form.get('sequence'))
                     + ')')
-        return 'Query succeded.'
+        ExecuteQuery(stmt)
+        return 'Query: ' + stmt
     else:
         return 'Some value is missing in your request.'
 
 @app.route('/tutorial_end', methods=['POST'])
 def tutorial_end(id):
     if request.form.get('user_id') and request.form.get('play_record') and request.form.get('composition_name'):
-        ExecuteQuery('insert into play_record (user_id, composition_name, played_at, sequence) value ('
+        stmt1 = str('insert into play_record (user_id, composition_name, played_at, sequence) value ('
                     + str(request.form.get('user_id'))
                     + ', \''
                     + str(request.form.get('composition_name'))
@@ -91,12 +93,15 @@ def tutorial_end(id):
                     + '\' as datetime), '
                     + str(request.form.get('sequence'))
                     + ')')
-        ExecuteQuery('update user_info set updated_at=cast(\''
+        ExecuteQuery(stmt1)
+        
+        stmt2 = str('update user_info set updated_at=cast(\''
                     + str(datetime.datetime.now())
                     + '\' as datetime) where user_id='
                     + request.form.get('user_id')
                     + ')')
-        return 'Query succeded.'
+        ExecuteQuery(stmt2)
+        return 'Query: ' + stmt1 + ' AND ' + stmt2
     else:
         return 'Some value is missing in your request.'
 
