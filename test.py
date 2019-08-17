@@ -66,15 +66,15 @@ def first_login():
 
 @app.route('/chorus_end', methods=['POST'])
 def chorus_end():
-    if request.form.get('user_id') and request.form.get('play_record') and request.form.get('composition_name'):
-        stmt = str('insert into play_record (user_id, composition_name, played_at, play_record) value ('
+    if request.form.get('user_id') and request.form.get('sequence') and request.form.get('composition_name'):
+        stmt = str('insert into play_record (user_id, composition_name, played_at, sequence) value ('
                     + str(request.form.get('user_id'))
                     + ', \''
                     + str(request.form.get('composition_name'))
                     + '\', cast(\''
                     + str(datetime.datetime.now())
                     + '\' as datetime), '
-                    + str(request.form.get('play_record'))
+                    + str(request.form.get('sequence'))
                     + ')')
         ExecuteQuery(stmt)
         return 'Query: ' + stmt
@@ -83,15 +83,15 @@ def chorus_end():
 
 @app.route('/tutorial_end', methods=['POST'])
 def tutorial_end():
-    if request.form.get('user_id') and request.form.get('play_record') and request.form.get('composition_name'):
-        stmt1 = str('insert into play_record (user_id, composition_name, played_at, play_record) value ('
+    if request.form.get('user_id') and request.form.get('sequence') and request.form.get('composition_name'):
+        stmt1 = str('insert into play_record (user_id, composition_name, played_at, sequence) value ('
                     + str(request.form.get('user_id'))
                     + ', \''
                     + str(request.form.get('composition_name'))
                     + '\', cast(\''
                     + str(datetime.datetime.now())
                     + '\' as datetime), '
-                    + str(request.form.get('play_record'))
+                    + str(request.form.get('sequence'))
                     + ')')
         ExecuteQuery(stmt1)
         
