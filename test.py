@@ -26,6 +26,7 @@ gen.FLAGS.backing_chords = 'Dmaj7'
 def ExecuteQuery(sql):
   cur = mysql.connect().cursor()
   cur.execute(sql)
+  return cur.fetchall()
   """
   results = [dict((cur.description[i][0], value)
     for i, value in enumerate(row)) for row in cur.fetchall()]
