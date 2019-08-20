@@ -27,10 +27,11 @@ def ExecuteQuery(sql):
     rows = cur.fetchall()
     return_str = ''
     for i in rows:
+        print(i)
         return_str + str(i)
     cur.close
     conn.close
-    return return_str
+    return ""
 
 
 @app.route('/generate', methods=['POST'])
@@ -98,7 +99,8 @@ def tutorial_end():
                     + str(request.form.get('lesson_num')) 
                     + ' where user_id='
                     + request.form.get('user_id'))
-        return_value = ExecuteQuery('select * from user_info')
+        print(stmt)
+        return_value = ExecuteQuery('stmt')
         return return_value
     else:
         return 'Some value is missing in your request.'
