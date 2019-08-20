@@ -51,7 +51,7 @@ def generate():
     gen.FLAGS.backing_chords = 'Dmaj7'
 
     return str_to_return
-
+"""
 @app.route('/first_login', methods=['POST'])
 def first_login():
     if request.form.get('user_id') and request.form.get('uuid'):
@@ -65,14 +65,14 @@ def first_login():
                     + str(datetime.datetime.now())
                     + '\' as datetime), %s)')
         cur = mysql.connect().cursor()
-        cur.execute(sql, None)
+        cur.execute(stmt, None)
         return_data = cur.fetchall()
-        cursor.close()
+        cur.close()
         self._close()
         return return_data
     else:
         return 'Your device was not able to be certificated.'
-
+"""
 @app.route('/chorus_end', methods=['POST'])
 def chorus_end():
     if request.form.get('user_id') and request.form.get('sequence') and request.form.get('composition_name') and request.form.get('chorus'):
@@ -98,25 +98,24 @@ def tutorial_end():
         stmt = str('update user_info set updated_at=cast(\''
                     + str(datetime.datetime.now())
                     + '\' as datetime), lesson_completed='
-                    + str(equest.form.get('lesson_num')) 
+                    + str(request.form.get('lesson_num')) 
                     + ' where user_id='
                     + request.form.get('user_id'))
         cur = mysql.connect().cursor()
-        cur.execute(sql, None)
+        cur.execute(stmt)
         return_data = cur.fetchall()
-        cursor.close()
-        self._close()
+        cur.close()
         return return_data
     else:
         return 'Some value is missing in your request.'
         
 @app.route('/transfer_id_created', methods=['POST'])
-def tutorial_end():
+def transfer_id_created():
     if request.form.get('user_id') and request.form.get('lesson_num'):
         stmt = str('update user_info set updated_at=cast(\''
                     + str(datetime.datetime.now())
                     + '\' as datetime), lesson_completed='
-                    + str(equest.form.get('lesson_num')) 
+                    + str(request.form.get('lesson_num')) 
                     + ' where user_id='
                     + request.form.get('user_id'))
         ExecuteQuery(stmt)
