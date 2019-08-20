@@ -1,8 +1,6 @@
 from magenta.models.improv_rnn import improv_rnn_generate as gen
 from flask import Flask, request
-from sqlalchemy import create_engine
-from sqlalchemy.orm import scoped_session, sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
+from flask_mysqldb import MySQL
 import sys
 import datetime
 
