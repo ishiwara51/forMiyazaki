@@ -1,20 +1,22 @@
 from magenta.models.improv_rnn import improv_rnn_generate as gen
 from flask import Flask, request
-from flaskext.mysql import MySQL
+from sqlalchemy import create_engine
+from sqlalchemy.orm import scoped_session, sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
 import sys
 import datetime
 
 #https://qiita.com/sireline/items/8980110d945313cf7fab#step4---mysqlを利用する
 
 app = Flask(__name__)
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'password'
+app.config['MYSQL_DB'] = 'utjam'
+app.config['MYSQL_HOST'] = 'utjam-db.cpmduxvg8wt5.us-east-1.rds.amazonaws.com'
+app.config['MYSQL_PORT'] = 3306
+mysql = MySQL(app)
 
-mysql = MySQL()
 
-app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'password'
-app.config['MYSQL_DATABASE_DB'] = 'utjam'
-app.config['MYSQL_DATABASE_HOST'] = 'utjam-db.cpmduxvg8wt5.us-east-1.rds.amazonaws.com'
-app.config['MYSQL_DATABASE_PORT'] = 3306
 
 mysql.init_app(app)
 
@@ -101,11 +103,10 @@ def tutorial_end():
                     + str(request.form.get('lesson_num')) 
                     + ' where user_id='
                     + request.form.get('user_id'))
-        cur = mysql.get_db().cursor()
+        cur = mysql.connection.cursor()
         cur.execute(stmt)
-        cur.commit()
-        cur.close()
-        return 'asdf'
+        rv = cur.fetchall()
+        return rv
     else:
         return 'Some value is missing in your request.'
         
