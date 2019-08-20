@@ -1,22 +1,12 @@
 from magenta.models.improv_rnn import improv_rnn_generate as gen
 from flask import Flask, request
-from flask_mysqldb import MySQL
+import MySQLdb
 import sys
 import datetime
 
 #https://qiita.com/sireline/items/8980110d945313cf7fab#step4---mysqlを利用する
 
 app = Flask(__name__)
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'password'
-app.config['MYSQL_DB'] = 'utjam'
-app.config['MYSQL_HOST'] = 'utjam-db.cpmduxvg8wt5.us-east-1.rds.amazonaws.com'
-app.config['MYSQL_PORT'] = 3306
-mysql = MySQL(app)
-
-
-
-mysql.init_app(app)
 
 gen.FLAGS.config = 'chord_pitches_improv'
 gen.FLAGS.bundle_file = 'chord_pitches_improv.mag'
@@ -26,14 +16,18 @@ gen.FLAGS.primer_melody = "[60]"
 gen.FLAGS.backing_chords = 'Dmaj7'
 
 def ExecuteQuery(sql):
-  cur = mysql.connect().cursor()
-  cur.execute(sql)
-  return cur.fetchall()
-  """
-  results = [dict((cur.description[i][0], value)
-    for i, value in enumerate(row)) for row in cur.fetchall()]
-  return results
-  """
+    conn = MySQLdb.connect(
+ user='root',
+ passwd='password',
+ host='utjam-db.cpmduxvg8wt5.us-east-1.rds.amazonaws.com',
+ db='utjam',
+ port=3306)
+    cur = conn.cursor()
+    cur.execute(sql)
+    rows = cur.fetchall()
+    cur.close
+    conn.close
+    return rows
 
 
 @app.route('/generate', methods=['POST'])
@@ -101,10 +95,8 @@ def tutorial_end():
                     + str(request.form.get('lesson_num')) 
                     + ' where user_id='
                     + request.form.get('user_id'))
-        cur = mysql.connection.cursor()
-        cur.execute(stmt)
-        rv = cur.fetchall()
-        return rv
+        return_value = ExecuteQuery(stmt)
+        return return_value
     else:
         return 'Some value is missing in your request.'
         
