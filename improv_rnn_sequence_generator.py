@@ -218,7 +218,7 @@ class ImprovRnnSequenceGenerator(mm.BaseSequenceGenerator):
       print(dict_to_export)
       str_to_export = f.getvalue()
     
-    re.sub('\'', '"', str_to_export)
+    str_to_export = re.sub('\'', '"', str_to_export)
     return str_to_export
     
     """
