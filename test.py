@@ -107,7 +107,6 @@ def tutorial_end():
         cursor.close()
         self._close()
         return return_data
-        return ExecuteQuery('select * from user_info')
     else:
         
 @app.route('/transfer_id_created', methods=['POST'])
