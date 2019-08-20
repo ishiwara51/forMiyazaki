@@ -210,13 +210,15 @@ class ImprovRnnSequenceGenerator(mm.BaseSequenceGenerator):
                 start_time = textlist_list[2].split(' ')[-1]
                 end_time = textlist_list[3].split(' ')[-1]
 
-            dict_to_export[float(start_time)] = [float(end_time)-float(start_time),int(pitch)]
+            dict_to_export[str(start_time)] = [float(end_time)-float(start_time),int(pitch)]
     
     print(dict_to_export)
     with io.StringIO() as f:
       sys.stdout = f
       print(dict_to_export)
       str_to_export = f.getvalue()
+    
+    re.sub('\'', '"', str_to_export)
     return str_to_export
     
     """
