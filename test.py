@@ -4,6 +4,8 @@ from flaskext.mysql import MySQL
 import sys
 import datetime
 
+#https://qiita.com/sireline/items/8980110d945313cf7fab#step4---mysqlを利用する
+
 app = Flask(__name__)
 
 mysql = MySQL()
@@ -52,26 +54,34 @@ def generate():
 
 @app.route('/first_login', methods=['POST'])
 def first_login():
-    if request.form.get('user_id'):
-        stmt = str('insert into user_info (user_id, created_at, lesson_completed, updated_at) values ('
+    if request.form.get('user_id') and request.form.get('uuid'):
+        stmt = str('insert into user_info (user_id, uuid, created_at, lesson_completed, updated_at, transfer_id) values ('
                     + str(request.form.get('user_id'))
-                    + ', cast(\''
+                    + '\', cast(\''
+                    + str(request.form.get('uuid'))
+                    + '\' as binary(16), cast(\''
                     + str(datetime.date.today())
                     + '\' as date), 0, cast(\''
                     + str(datetime.datetime.now())
-                    + '\' as datetime))')
-        ExecuteQuery(stmt)
-        return 'Query: ' + stmt
+                    + '\' as datetime), %s)'
+        cur = mysql.connect().cursor()
+        cur.execute(sql, None)
+        return_data = cur.fetchall()
+        cursor.close()
+        self._close()
+        return return_data
     else:
         return 'Your device was not able to be certificated.'
 
 @app.route('/chorus_end', methods=['POST'])
 def chorus_end():
-    if request.form.get('user_id') and request.form.get('sequence') and request.form.get('composition_name'):
+    if request.form.get('user_id') and request.form.get('sequence') and request.form.get('composition_name') and request.form.get('chorus'):
         stmt = str('insert into play_record (user_id, composition_name, played_at, sequence) value ('
                     + str(request.form.get('user_id'))
-                    + ', \''
+                    + '\', \''
                     + str(request.form.get('composition_name'))
+                    + ', \''
+                    + str(request.form.get('chorus'))
                     + '\', cast(\''
                     + str(datetime.datetime.now())
                     + '\' as datetime), \''
@@ -84,10 +94,30 @@ def chorus_end():
 
 @app.route('/tutorial_end', methods=['POST'])
 def tutorial_end():
-    if request.form.get('user_id'):
+    if request.form.get('user_id') and request.form.get('lesson_num'):
         stmt = str('update user_info set updated_at=cast(\''
                     + str(datetime.datetime.now())
-                    + '\' as datetime) where user_id='
+                    + '\' as datetime), lesson_completed="
+                    + str(equest.form.get('lesson_num')) 
+                    + ' where user_id='
+                    + request.form.get('user_id'))
+        cur = mysql.connect().cursor()
+        cur.execute(sql, None)
+        return_data = cur.fetchall()
+        cursor.close()
+        self._close()
+        return return_data
+        return ExecuteQuery('select * from user_info')
+    else:
+        
+@app.route('/transfer_id_created', methods=['POST'])
+def tutorial_end():
+    if request.form.get('user_id') and request.form.get('lesson_num'):
+        stmt = str('update user_info set updated_at=cast(\''
+                    + str(datetime.datetime.now())
+                    + '\' as datetime), lesson_completed="
+                    + str(equest.form.get('lesson_num')) 
+                    + ' where user_id='
                     + request.form.get('user_id'))
         ExecuteQuery(stmt)
         return ExecuteQuery('select * from user_info')
