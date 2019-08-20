@@ -105,7 +105,7 @@ def tutorial_end():
         cur.execute(stmt)
         return_data = cur.fetchall()
         cur.close()
-        return return_data
+        return 'asdf'
     else:
         return 'Some value is missing in your request.'
         
