@@ -101,9 +101,9 @@ def tutorial_end():
                     + str(request.form.get('lesson_num')) 
                     + ' where user_id='
                     + request.form.get('user_id'))
-        cur = mysql.connection.cursor()
+        cur = mysql.get_db().cursor()
         cur.execute(stmt)
-        mysql.connection.commit()
+        cur.commit()
         cur.close()
         return 'asdf'
     else:
