@@ -98,7 +98,8 @@ def tutorial_end():
                     + '\' as datetime), lesson_completed='
                     + str(request.form.get('lesson_num')) 
                     + ' where user_id='
-                    + request.form.get('user_id'))
+                    + request.form.get('user_id')
+                    + ';')
         print(stmt)
         return_value = ExecuteQuery('stmt')
         return return_value
