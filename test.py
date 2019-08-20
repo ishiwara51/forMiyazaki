@@ -108,6 +108,7 @@ def tutorial_end():
         self._close()
         return return_data
     else:
+        return 'Some value is missing in your request.'
         
 @app.route('/transfer_id_created', methods=['POST'])
 def tutorial_end():
