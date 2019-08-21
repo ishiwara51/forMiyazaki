@@ -89,8 +89,8 @@ def chorus_end():
 @app.route('/tutorial_end', methods=['POST'])
 def tutorial_end():
     if request.form.get('user_id') and request.form.get('lesson_num'):
-        stmt = str('update user_info set updated_at=cast(\'%s\' as datetime), lesson_completed=%s where user_id=%s',
-                    (str(datetime.datetime.now()), str(request.form.get('lesson_num')), request.form.get('user_id')))
+        stmt = 'update user_info set updated_at=cast(\'%s\' as datetime), lesson_completed=%s where user_id=%s'
+        str_placeholders = (str(datetime.datetime.now()), str(request.form.get('lesson_num')), request.form.get('user_id')))
         """
         stmt = str('update user_info set updated_at=cast(\''
                     + str(datetime.datetime.now())
@@ -99,7 +99,7 @@ def tutorial_end():
                     + ' where user_id='
                     + request.form.get('user_id'))
         """
-        return_str = ExecuteQuery(stmt)
+        return_str = ExecuteQuery(stmt, str_placeholders)
         return return_str
     else:
         return 'Some value is missing in your request.'
