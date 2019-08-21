@@ -94,7 +94,7 @@ def tutorial_end():
 @app.route('/transfer_id_created', methods=['POST'])
 def transfer_id_created():
     if request.form.get('uuid'):
-        stmt = 'update user_info set transfer_id=%s, where uuid=%s'
+        stmt = 'update user_info set transfer_id=%s where uuid=%s'
         param_placeholders = (random.randint(-2147483648, 2147483647), str(request.form.get('uuid')))
         print(stmt % param_placeholders)
         return_str = ExecuteQuery(stmt, param_placeholders)
