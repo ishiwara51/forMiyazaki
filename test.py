@@ -15,7 +15,7 @@ gen.FLAGS.num_outputs = 1
 gen.FLAGS.primer_melody = "[60]"
 gen.FLAGS.backing_chords = 'Dmaj7'
 
-def ExecuteQuery(stmt, str_placeholders):
+def ExecuteQuery(stmt, param_placeholders):
     conn = MySQLdb.connect(
  user='root',
  passwd='password',
@@ -23,7 +23,7 @@ def ExecuteQuery(stmt, str_placeholders):
  db='utjam',
  port=3306)
     cur = conn.cursor()
-    cur.execute(stmt, str_placeholders)
+    cur.execute(stmt, param_placeholders)
     rows = cur.fetchall()
     return_str = ''
     for i in rows:
@@ -89,8 +89,8 @@ def chorus_end():
 @app.route('/tutorial_end', methods=['POST'])
 def tutorial_end():
     if request.form.get('user_id') and request.form.get('lesson_num'):
-        stmt = 'update user_info set updated_at=cast(\'%s\' as datetime), lesson_completed=%s where user_id=%s'
-        str_placeholders = (str(datetime.datetime.now()), str(request.form.get('lesson_num')), request.form.get('user_id'))
+        stmt = 'update user_info set updated_at=cast(%s as datetime), lesson_completed=%d where user_id=%d'
+        param_placeholders = (str(datetime.datetime.now()), request.form.get('lesson_num'), request.form.get('user_id'))
         """
         stmt = str('update user_info set updated_at=cast(\''
                     + str(datetime.datetime.now())
@@ -99,7 +99,7 @@ def tutorial_end():
                     + ' where user_id='
                     + request.form.get('user_id'))
         """
-        return_str = ExecuteQuery(stmt, str_placeholders)
+        return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
     else:
         return 'Some value is missing in your request.'
