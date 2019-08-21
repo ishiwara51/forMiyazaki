@@ -90,7 +90,7 @@ def chorus_end():
 def tutorial_end():
     if request.form.get('user_id') and request.form.get('lesson_num'):
         stmt = 'update user_info set updated_at=cast(\'%s\' as datetime), lesson_completed=%s where user_id=%s'
-        str_placeholders = (str(datetime.datetime.now()), str(request.form.get('lesson_num')), request.form.get('user_id')))
+        str_placeholders = (str(datetime.datetime.now()), str(request.form.get('lesson_num')), request.form.get('user_id'))
         """
         stmt = str('update user_info set updated_at=cast(\''
                     + str(datetime.datetime.now())
