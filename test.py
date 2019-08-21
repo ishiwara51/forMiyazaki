@@ -52,7 +52,7 @@ def first_login():
     if request.form.get('uuid') and request.form.get('lesson_completed'):
         stmt = 'insert into user_info (uuid, created_at, lesson_completed, updated_at) values (%s, cast(%s as datetime), %s, cast(%s as datetime))'
         param_placeholders = (str(request.form.get('uuid')), str(datetime.datetime.now()), str(request.form.get('lesson_completed')), str(datetime.datetime.now()))
-        print(stmt,param_placeholders)
+
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
     else:
@@ -63,7 +63,7 @@ def transfer():
     if request.form.get('uuid') and request.form.get('transfer_id'):
         stmt = 'update user_info set uuid=%s, updated_at=%s, transfer_id=%s where transfer_id=%s'
         param_placeholders = (str(request.form.get('uuid')), str(datetime.datetime.now()), None, str(request.form.get('transfer_id')))
-
+        print(stmt,param_placeholders)
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
     else:
