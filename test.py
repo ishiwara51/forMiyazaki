@@ -24,6 +24,7 @@ def ExecuteQuery(stmt, param_placeholders):
  port=3306)
     cur = conn.cursor()
     cur.execute(stmt, param_placeholders)
+    conn.commit()
     rows = cur.fetchall()
     return_str = ''
     for i in rows:
