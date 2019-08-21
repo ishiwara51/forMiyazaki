@@ -71,9 +71,9 @@ def transfer():
 
 @app.route('/chorus_end', methods=['POST'])
 def chorus_end():
-    if request.form.get('user_id') and request.form.get('sequence') and request.form.get('composition_name') and request.form.get('chorus'):
-        stmt = 'insert into play_record (user_id, composition_name, played_at, sequence) value (%s, %s, %s, cast(%s as datetime), %s)'
-        param_placeholders = (str(request.form.get('user_id')), str(request.form.get('composition_name')), str(request.form.get('chorus')), str(datetime.datetime.now()), str(request.form.get('sequence')))
+    if request.form.get('uuid') and request.form.get('sequence') and request.form.get('composition_name') and request.form.get('chorus'):
+        stmt = 'insert into play_record (uuid, composition_name, played_at, sequence) value (%s, %s, cast(%s as datetime), %s)'
+        param_placeholders = (str(request.form.get('uuid')), str(request.form.get('composition_name')), str(request.form.get('chorus')), str(datetime.datetime.now()), str(request.form.get('sequence')))
    
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
@@ -82,9 +82,9 @@ def chorus_end():
 
 @app.route('/tutorial_end', methods=['POST'])
 def tutorial_end():
-    if request.form.get('user_id') and request.form.get('lesson_completed'):
-        stmt = 'update user_info set updated_at=cast(%s as datetime), lesson_completed=%s where user_id=%s'
-        param_placeholders = (str(datetime.datetime.now()), int(request.form.get('lesson_completed')), int(request.form.get('user_id')))
+    if request.form.get('uuid') and request.form.get('lesson_completed'):
+        stmt = 'update user_info set updated_at=cast(%s as datetime), lesson_completed=%s where uuid=%s'
+        param_placeholders = (str(datetime.datetime.now()), int(request.form.get('lesson_completed')), int(request.form.get('uuid')))
    
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
@@ -93,9 +93,9 @@ def tutorial_end():
         
 @app.route('/transfer_id_created', methods=['POST'])
 def transfer_id_created():
-    if request.form.get('user_id') and request.form.get('lesson_completed'):
-        stmt = 'update user_info set transfer_id=%s, where user_id=%s'
-        param_placeholders = (random.randint(-2147483648, 2147483647), int(request.form.get('user_id')))
+    if request.form.get('uuid'):
+        stmt = 'update user_info set transfer_id=%s, where uuid=%s'
+        param_placeholders = (random.randint(-2147483648, 2147483647), int(request.form.get('uuid')))
     
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
