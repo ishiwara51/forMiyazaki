@@ -91,7 +91,7 @@ def tutorial_end():
     print(int(request.form.get('lesson_num')))
     print(type(int(request.form.get('lesson_num'))))
     if request.form.get('user_id') and request.form.get('lesson_num'):
-        stmt = 'update user_info set updated_at=cast(%s as datetime), lesson_completed=%d where user_id=%d'
+        stmt = 'update user_info set updated_at=cast(%s as datetime), lesson_completed=%s where user_id=%s'
         param_placeholders = (str(datetime.datetime.now()), int(request.form.get('lesson_num')), int(request.form.get('user_id')))
         """
         stmt = str('update user_info set updated_at=cast(\''
