@@ -88,6 +88,8 @@ def chorus_end():
 
 @app.route('/tutorial_end', methods=['POST'])
 def tutorial_end():
+    print(request.form.get('lesson_num'))
+    print(type(request.form.get('lesson_num')))
     if request.form.get('user_id') and request.form.get('lesson_num'):
         stmt = 'update user_info set updated_at=cast(%s as datetime), lesson_completed=%d where user_id=%d'
         param_placeholders = (str(datetime.datetime.now()), int.from_bytes(request.form.get('lesson_num')), int.from_bytes(request.form.get('user_id')))
