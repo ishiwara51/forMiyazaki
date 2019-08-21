@@ -15,7 +15,7 @@ gen.FLAGS.num_outputs = 1
 gen.FLAGS.primer_melody = "[60]"
 gen.FLAGS.backing_chords = 'Dmaj7'
 
-def ExecuteQuery(sql):
+def ExecuteQuery(stmt, str_placeholders):
     conn = MySQLdb.connect(
  user='root',
  passwd='password',
@@ -23,7 +23,7 @@ def ExecuteQuery(sql):
  db='utjam',
  port=3306)
     cur = conn.cursor()
-    cur.execute(sql)
+    cur.execute(stmt, str_placeholders)
     rows = cur.fetchall()
     return_str = ''
     for i in rows:
