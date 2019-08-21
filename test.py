@@ -52,7 +52,7 @@ def first_login():
     if request.form.get('uuid') and request.form.get('lesson_completed'):
         stmt = 'insert into user_info (uuid, created_at, lesson_completed, updated_at) values (%s, cast(%s as datetime), %s, cast(%s as datetime))'
         param_placeholders = (str(request.form.get('uuid')), str(datetime.datetime.now()), str(request.form.get('lesson_completed')), str(datetime.datetime.now()))
-
+        print(stmt % param_placeholders)
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
     else:
@@ -74,7 +74,7 @@ def chorus_end():
     if request.form.get('uuid') and request.form.get('sequence') and request.form.get('composition_name') and request.form.get('chorus'):
         stmt = 'insert into play_record (uuid, composition_name, played_at, sequence) value (%s, %s, cast(%s as datetime), %s)'
         param_placeholders = (str(request.form.get('uuid')), str(request.form.get('composition_name')), str(request.form.get('chorus')), str(datetime.datetime.now()), str(request.form.get('sequence')))
-   
+        print(stmt % param_placeholders)
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
     else:
@@ -85,7 +85,7 @@ def tutorial_end():
     if request.form.get('uuid') and request.form.get('lesson_completed'):
         stmt = 'update user_info set updated_at=cast(%s as datetime), lesson_completed=%s where uuid=%s'
         param_placeholders = (str(datetime.datetime.now()), int(request.form.get('lesson_completed')), str(request.form.get('uuid')))
-
+        print(stmt % param_placeholders)
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
     else:
@@ -96,7 +96,7 @@ def transfer_id_created():
     if request.form.get('uuid'):
         stmt = 'update user_info set transfer_id=%s where uuid=%s'
         param_placeholders = (random.randint(-2147483648, 2147483647), str(request.form.get('uuid')))
-
+        print(stmt % param_placeholders)
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
     else:
