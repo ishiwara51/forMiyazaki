@@ -95,10 +95,11 @@ def tutorial_end():
 def transfer_id_created():
     if request.form.get('uuid'):
         stmt = 'update user_info set transfer_id=%s where uuid=%s'
-        param_placeholders = (random.randint(-2147483648, 2147483647), str(request.form.get('uuid')))
+        transfer_id = random.randint(-2147483648, 2147483647)
+        param_placeholders = (transfer_id, str(request.form.get('uuid')))
         print(stmt % param_placeholders)
         return_str = ExecuteQuery(stmt, param_placeholders)
-        return return_str
+        return str(transfer_id)
     else:
         return 'Some value is missing in your request.'
 
