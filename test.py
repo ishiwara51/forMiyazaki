@@ -3,8 +3,9 @@ from flask import Flask, request
 import MySQLdb
 import sys
 import datetime
+import random
 
-#https://qiita.com/sireline/items/8980110d945313cf7fab#step4---mysqlを利用する
+#https://it-engineer-lab.com/archives/1181#_INSERT
 
 app = Flask(__name__)
 
@@ -25,11 +26,6 @@ def ExecuteQuery(stmt, param_placeholders):
     cur = conn.cursor()
     cur.execute(stmt, param_placeholders)
     conn.commit()
-    rows = cur.fetchall()
-    return_str = ''
-    for i in rows:
-        print(i)
-        return_str + str(i)
     cur.close
     conn.close
     return ""
@@ -53,17 +49,22 @@ def generate():
 
 @app.route('/first_login', methods=['POST'])
 def first_login():
-    if request.form.get('user_id') and request.form.get('uuid'):
-        stmt = str('insert into user_info (user_id, uuid, created_at, lesson_completed, updated_at, transfer_id) values ('
-                    + str(request.form.get('user_id'))
-                    + '\', cast(\''
-                    + str(request.form.get('uuid'))
-                    + '\' as binary(16), cast(\''
-                    + str(datetime.date.today())
-                    + '\' as date), 0, cast(\''
-                    + str(datetime.datetime.now())
-                    + '\' as datetime), %s)')
-        return_str = ExecuteQuery(stmt)
+    if request.form.get('uuid') and request.form.get('lesson_completed'):
+        stmt = 'insert into user_info (uuid, created_at, lesson_completed, updated_at) values (%s, cast(%s as datetime), %s, cast(%s as datetime),)'
+        param_placeholders = (str(request.form.get('uuid')), str(datetime.date.today()), str(request.form.get('lesson_completed')), str(datetime.datetime.now()))
+
+        return_str = ExecuteQuery(stmt, param_placeholders)
+        return return_str
+    else:
+        return 'Your device was not able to be certificated.'
+
+@app.route('/transfer', methods=['POST'])
+def transfer():
+    if request.form.get('uuid') and request.form.get('transfer_id'):
+        stmt = 'update user_info set uuid=%s, updated_at=%s, transfer_id=%s where transfer_id = %s'
+        param_placeholders = (str(request.form.get('uuid')), str(datetime.datetime.now()), None, str(request.form.get('transfer_id')))
+
+        return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
     else:
         return 'Your device was not able to be certificated.'
@@ -71,37 +72,20 @@ def first_login():
 @app.route('/chorus_end', methods=['POST'])
 def chorus_end():
     if request.form.get('user_id') and request.form.get('sequence') and request.form.get('composition_name') and request.form.get('chorus'):
-        stmt = str('insert into play_record (user_id, composition_name, played_at, sequence) value ('
-                    + str(request.form.get('user_id'))
-                    + '\', \''
-                    + str(request.form.get('composition_name'))
-                    + ', \''
-                    + str(request.form.get('chorus'))
-                    + '\', cast(\''
-                    + str(datetime.datetime.now())
-                    + '\' as datetime), \''
-                    + str(request.form.get('sequence'))
-                    + '\')')
-        return_str = ExecuteQuery(stmt)
+        stmt = 'insert into play_record (user_id, composition_name, played_at, sequence) value (%s, %s, %s, cast(%s as datetime), %s)'
+        param_placeholders = (str(request.form.get('user_id')), str(request.form.get('composition_name')), str(request.form.get('chorus')), str(datetime.datetime.now()), str(request.form.get('sequence')))
+   
+        return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
     else:
         return 'Some value is missing in your request.'
 
 @app.route('/tutorial_end', methods=['POST'])
 def tutorial_end():
-    print(int(request.form.get('lesson_num')))
-    print(type(int(request.form.get('lesson_num'))))
     if request.form.get('user_id') and request.form.get('lesson_num'):
         stmt = 'update user_info set updated_at=cast(%s as datetime), lesson_completed=%s where user_id=%s'
         param_placeholders = (str(datetime.datetime.now()), int(request.form.get('lesson_num')), int(request.form.get('user_id')))
-        """
-        stmt = str('update user_info set updated_at=cast(\''
-                    + str(datetime.datetime.now())
-                    + '\' as datetime), lesson_completed='
-                    + str(request.form.get('lesson_num')) 
-                    + ' where user_id='
-                    + request.form.get('user_id'))
-        """
+   
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
     else:
@@ -110,13 +94,10 @@ def tutorial_end():
 @app.route('/transfer_id_created', methods=['POST'])
 def transfer_id_created():
     if request.form.get('user_id') and request.form.get('lesson_num'):
-        stmt = str('update user_info set updated_at=cast(\''
-                    + str(datetime.datetime.now())
-                    + '\' as datetime), lesson_completed='
-                    + str(request.form.get('lesson_num')) 
-                    + ' where user_id='
-                    + request.form.get('user_id'))
-        return_str = ExecuteQuery(stmt)
+        stmt = 'update user_info set transfer_id=%s, where user_id=%s'
+        param_placeholders = (random.randint(-2147483648, 2147483647), int(request.form.get('user_id')))
+    
+        return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
     else:
         return 'Some value is missing in your request.'
