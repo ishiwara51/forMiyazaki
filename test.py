@@ -61,7 +61,7 @@ def first_login():
 @app.route('/transfer', methods=['POST'])
 def transfer():
     if request.form.get('uuid') and request.form.get('transfer_id'):
-        stmt = 'update user_info set uuid=%s, updated_at=%s, transfer_id=%s where transfer_id = %s'
+        stmt = 'update user_info set uuid=%s, updated_at=%s, transfer_id=%s where transfer_id=%s'
         param_placeholders = (str(request.form.get('uuid')), str(datetime.datetime.now()), None, str(request.form.get('transfer_id')))
 
         return_str = ExecuteQuery(stmt, param_placeholders)
