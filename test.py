@@ -52,7 +52,7 @@ def first_login():
     if request.form.get('uuid') and request.form.get('lesson_completed'):
         stmt = 'insert into user_info (uuid, created_at, lesson_completed, updated_at) values (%s, cast(%s as datetime), %s, cast(%s as datetime),)'
         param_placeholders = (str(request.form.get('uuid')), str(datetime.date.today()), str(request.form.get('lesson_completed')), str(datetime.datetime.now()))
-
+        print(stmt,param_placeholders)
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
     else:
@@ -82,9 +82,9 @@ def chorus_end():
 
 @app.route('/tutorial_end', methods=['POST'])
 def tutorial_end():
-    if request.form.get('user_id') and request.form.get('lesson_num'):
+    if request.form.get('user_id') and request.form.get('lesson_completed'):
         stmt = 'update user_info set updated_at=cast(%s as datetime), lesson_completed=%s where user_id=%s'
-        param_placeholders = (str(datetime.datetime.now()), int(request.form.get('lesson_num')), int(request.form.get('user_id')))
+        param_placeholders = (str(datetime.datetime.now()), int(request.form.get('lesson_completed')), int(request.form.get('user_id')))
    
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
@@ -93,7 +93,7 @@ def tutorial_end():
         
 @app.route('/transfer_id_created', methods=['POST'])
 def transfer_id_created():
-    if request.form.get('user_id') and request.form.get('lesson_num'):
+    if request.form.get('user_id') and request.form.get('lesson_completed'):
         stmt = 'update user_info set transfer_id=%s, where user_id=%s'
         param_placeholders = (random.randint(-2147483648, 2147483647), int(request.form.get('user_id')))
     
