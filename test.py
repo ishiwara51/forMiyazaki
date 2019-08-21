@@ -50,7 +50,7 @@ def generate():
 @app.route('/first_login', methods=['POST'])
 def first_login():
     if request.form.get('uuid') and request.form.get('lesson_completed'):
-        stmt = 'insert into user_info (uuid, created_at, lesson_completed, updated_at) values (%s, cast(%s as datetime), %s, cast(%s as datetime))'
+        stmt = 'insert into user_info (uuid, created_at, lesson_completed, updated_at) values (cast(%s as binary(16)), cast(%s as datetime), %s, cast(%s as datetime))'
         param_placeholders = (str(request.form.get('uuid')), str(datetime.datetime.now()), str(request.form.get('lesson_completed')), str(datetime.datetime.now()))
         print(stmt,param_placeholders)
         return_str = ExecuteQuery(stmt, param_placeholders)
@@ -61,7 +61,7 @@ def first_login():
 @app.route('/transfer', methods=['POST'])
 def transfer():
     if request.form.get('uuid') and request.form.get('transfer_id'):
-        stmt = 'update user_info set uuid=%s, updated_at=%s, transfer_id=%s where transfer_id=%s'
+        stmt = 'update user_info set uuid=cast(%s as binary(16)), updated_at=%s, transfer_id=%s where transfer_id=%s'
         param_placeholders = (str(request.form.get('uuid')), str(datetime.datetime.now()), None, str(request.form.get('transfer_id')))
 
         return_str = ExecuteQuery(stmt, param_placeholders)
@@ -72,7 +72,7 @@ def transfer():
 @app.route('/chorus_end', methods=['POST'])
 def chorus_end():
     if request.form.get('uuid') and request.form.get('sequence') and request.form.get('composition_name') and request.form.get('chorus'):
-        stmt = 'insert into play_record (uuid, composition_name, played_at, sequence) value (%s, %s, cast(%s as datetime), %s)'
+        stmt = 'insert into play_record (cast(%s as binary(16)), composition_name, played_at, sequence) value (%s, %s, cast(%s as datetime), %s)'
         param_placeholders = (str(request.form.get('uuid')), str(request.form.get('composition_name')), str(request.form.get('chorus')), str(datetime.datetime.now()), str(request.form.get('sequence')))
    
         return_str = ExecuteQuery(stmt, param_placeholders)
@@ -83,7 +83,7 @@ def chorus_end():
 @app.route('/tutorial_end', methods=['POST'])
 def tutorial_end():
     if request.form.get('uuid') and request.form.get('lesson_completed'):
-        stmt = 'update user_info set updated_at=cast(%s as datetime), lesson_completed=%s where uuid=%s'
+        stmt = 'update user_info set updated_at=cast(%s as datetime), lesson_completed=%s where uuid=cast(%s as binary(16))'
         param_placeholders = (str(datetime.datetime.now()), int(request.form.get('lesson_completed')), str(request.form.get('uuid')))
    
         return_str = ExecuteQuery(stmt, param_placeholders)
@@ -94,7 +94,7 @@ def tutorial_end():
 @app.route('/transfer_id_created', methods=['POST'])
 def transfer_id_created():
     if request.form.get('uuid'):
-        stmt = 'update user_info set transfer_id=%s, where uuid=%s'
+        stmt = 'update user_info set transfer_id=%s, where uuid=cast(%s as binary(16))'
         param_placeholders = (random.randint(-2147483648, 2147483647), str(request.form.get('uuid')))
     
         return_str = ExecuteQuery(stmt, param_placeholders)
