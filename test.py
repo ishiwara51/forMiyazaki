@@ -85,7 +85,6 @@ def tutorial_end():
     if request.form.get('uuid') and request.form.get('lesson_completed'):
         stmt = 'update user_info set updated_at=cast(%s as datetime), lesson_completed=%s where uuid=%s'
         param_placeholders = (str(datetime.datetime.now()), int(request.form.get('lesson_completed')), str(request.form.get('uuid')))
-        print(stmt % param_placeholders)
 
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
@@ -97,7 +96,7 @@ def transfer_id_created():
     if request.form.get('uuid'):
         stmt = 'update user_info set transfer_id=%s, where uuid=%s'
         param_placeholders = (random.randint(-2147483648, 2147483647), str(request.form.get('uuid')))
-    
+        print(stmt % param_placeholders)
         return_str = ExecuteQuery(stmt, param_placeholders)
         return return_str
     else:
