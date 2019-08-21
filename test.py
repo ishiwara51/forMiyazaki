@@ -72,7 +72,7 @@ def transfer():
 @app.route('/chorus_end', methods=['POST'])
 def chorus_end():
     if request.form.get('uuid') and request.form.get('sequence') and request.form.get('composition_name') and request.form.get('chorus'):
-        stmt = 'insert into play_record (%s, composition_name, played_at, sequence) value (%s, %s, cast(%s as datetime), %s)'
+        stmt = 'insert into play_record (uuid, composition_name, played_at, sequence) value (%s, %s, cast(%s as datetime), %s)'
         param_placeholders = (str(request.form.get('uuid')), str(request.form.get('composition_name')), str(request.form.get('chorus')), str(datetime.datetime.now()), str(request.form.get('sequence')))
    
         return_str = ExecuteQuery(stmt, param_placeholders)
