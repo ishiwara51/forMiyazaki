@@ -49,7 +49,7 @@ def generate():
     gen.FLAGS.backing_chords = 'Dmaj7'
 
     return str_to_return
-"""
+
 @app.route('/first_login', methods=['POST'])
 def first_login():
     if request.form.get('user_id') and request.form.get('uuid'):
@@ -62,15 +62,11 @@ def first_login():
                     + '\' as date), 0, cast(\''
                     + str(datetime.datetime.now())
                     + '\' as datetime), %s)')
-        cur = mysql.connect().cursor()
-        cur.execute(stmt, None)
-        return_data = cur.fetchall()
-        cur.close()
-        self._close()
-        return return_data
+        return_str = ExecuteQuery(stmt)
+        return return_str
     else:
         return 'Your device was not able to be certificated.'
-"""
+
 @app.route('/chorus_end', methods=['POST'])
 def chorus_end():
     if request.form.get('user_id') and request.form.get('sequence') and request.form.get('composition_name') and request.form.get('chorus'):
@@ -85,23 +81,26 @@ def chorus_end():
                     + '\' as datetime), \''
                     + str(request.form.get('sequence'))
                     + '\')')
-        ExecuteQuery(stmt)
-        return 'Query: ' + stmt
+        return_str = ExecuteQuery(stmt)
+        return return_str
     else:
         return 'Some value is missing in your request.'
 
 @app.route('/tutorial_end', methods=['POST'])
 def tutorial_end():
     if request.form.get('user_id') and request.form.get('lesson_num'):
+        stmt = str('update user_info set updated_at=cast(\'%s\' as datetime), lesson_completed=%s where user_id=%s',
+                    (str(datetime.datetime.now()), str(request.form.get('lesson_num')), request.form.get('user_id')))
+        """
         stmt = str('update user_info set updated_at=cast(\''
                     + str(datetime.datetime.now())
                     + '\' as datetime), lesson_completed='
                     + str(request.form.get('lesson_num')) 
                     + ' where user_id='
                     + request.form.get('user_id'))
-        print(stmt)
-        return_value = ExecuteQuery(stmt)
-        return return_value
+        """
+        return_str = ExecuteQuery(stmt)
+        return return_str
     else:
         return 'Some value is missing in your request.'
         
@@ -114,8 +113,8 @@ def transfer_id_created():
                     + str(request.form.get('lesson_num')) 
                     + ' where user_id='
                     + request.form.get('user_id'))
-        ExecuteQuery(stmt)
-        return ExecuteQuery('select * from user_info')
+        return_str = ExecuteQuery(stmt)
+        return return_str
     else:
         return 'Some value is missing in your request.'
 
