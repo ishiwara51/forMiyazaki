@@ -38,7 +38,7 @@ def ExecuteQuery(stmt, param_placeholders):
         print(result)
         return_str = f.getvalue()
         sys.stdout = sys.__stdout__
-    print(return_str)
+    print(type(return_str))
     return return_str
 
 
