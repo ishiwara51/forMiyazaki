@@ -119,7 +119,7 @@ def test():
     param_placeholders = (request.form.get('transfer_id'),)
     print(stmt % param_placeholders)
     return_str = ExecuteQuery(stmt, param_placeholders)
-    return str(transfer_id)
+    return return_str
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, threaded=True)    
