@@ -25,10 +25,12 @@ def ExecuteQuery(stmt, param_placeholders):
  port=3306)
     cur = conn.cursor()
     cur.execute(stmt, param_placeholders)
+    result = cur.fetchall()
+    print(result)
     conn.commit()
     cur.close
     conn.close
-    return ""
+    return result
 
 
 @app.route('/generate', methods=['POST'])
