@@ -30,7 +30,14 @@ def ExecuteQuery(stmt, param_placeholders):
     conn.commit()
     cur.close
     conn.close
-    return result
+
+    return_str=""
+    with io.StringIO() as f:
+        # 標準出力を f に切り替える。
+        sys.stdout = f
+        return_str = f.getvalue()
+        sys.stdout = sys.__stdout__
+    return return_str
 
 
 @app.route('/generate', methods=['POST'])
@@ -42,12 +49,12 @@ def generate():
         gen.FLAGS.primer_melody = request.form.get('primer_melody')
         gen.FLAGS.backing_chords = request.form.get('backing_chords')
 
-    str_to_return = gen.main("")
+    return_str = gen.main("")
 
     gen.FLAGS.primer_melody = "[60]"
     gen.FLAGS.backing_chords = 'Dmaj7'
 
-    return str_to_return
+    return return_str
 
 @app.route('/first_login', methods=['POST'])
 def first_login():
