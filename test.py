@@ -5,6 +5,7 @@ import sys
 import datetime
 import random
 import io
+import re
 
 #https://it-engineer-lab.com/archives/1181#_INSERT
 
@@ -75,7 +76,7 @@ def transfer():
         stmt = 'select * from user_info where transfer_id=%s'
         param_placeholders = (request.form.get('transfer_id'),)
         print(stmt % param_placeholders)
-        if ExecuteQuery(stmt, param_placeholders)=='()':
+        if re.sub(r'\s', '', ExecuteQuery(stmt, param_placeholders))=='()':
             print('asdf')
             return 'Query Failed'
         else:
