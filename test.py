@@ -74,8 +74,13 @@ def transfer():
         stmt = 'update user_info set uuid=%s, updated_at=%s, transfer_id=%s where transfer_id=%s'
         param_placeholders = (str(request.form.get('uuid')), str(datetime.datetime.now()), None, str(request.form.get('transfer_id')))
         print(stmt % param_placeholders)
-        return_str = ExecuteQuery(stmt, param_placeholders)
-        return return_str
+        if ExecuteQuery(stmt, param_placeholders)=='()':
+            return 'Query Failed'
+        else:
+            stmt = 'update user_info set uuid=%s, updated_at=%s, transfer_id=%s where transfer_id=%s'
+            param_placeholders = (str(request.form.get('uuid')), str(datetime.datetime.now()), None, str(request.form.get('transfer_id')))
+            return_str = ExecuteQuery(stmt, param_placeholders)
+            return return_str
     else:
         return 'Your device was not able to be certificated.'
 
