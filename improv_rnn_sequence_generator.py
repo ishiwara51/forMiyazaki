@@ -160,9 +160,7 @@ class ImprovRnnSequenceGenerator(mm.BaseSequenceGenerator):
     # Make sure that chords and melody start on the same step.
     if chords.start_step < melody.start_step:
       chords.set_length(len(chords) - melody.start_step + chords.start_step)
-    print(chords)
-    print(chords.end_step)
-    print(end_step)
+
     assert chords.end_step == end_step
 
     # Ensure that the melody extends up to the step we want to start generating.
@@ -204,7 +202,7 @@ class ImprovRnnSequenceGenerator(mm.BaseSequenceGenerator):
         textlist = text.split(',')
         for cnt, i in enumerate(textlist):
             textlist_list = i.split('\n')
-            pitch = textlist_list[0].split(' ')[-1]
+            pitch = int(textlist_list[0].split(' ')[-1])-21
             if cnt == 0:
                 start_time = 0
                 end_time = textlist_list[2].split(' ')[-1]
@@ -212,7 +210,7 @@ class ImprovRnnSequenceGenerator(mm.BaseSequenceGenerator):
                 start_time = textlist_list[2].split(' ')[-1]
                 end_time = textlist_list[3].split(' ')[-1]
 
-            dict_to_export[str(start_time)] = [float(end_time)-float(start_time),int(pitch)]
+            dict_to_export[str(start_time)] = [float(end_time)-float(start_time),pitch]
     
     print(dict_to_export)
     with io.StringIO() as f:
