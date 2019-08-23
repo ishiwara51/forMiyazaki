@@ -113,5 +113,13 @@ def transfer_id_created():
     else:
         return 'Some value is missing in your request.'
 
+@app.route('/test', methods=['POST'])
+def test():
+    stmt = 'select * from user_info where transfer_id=%s'
+    param_placeholders = (request.form.get('transfer_id'),)
+    print(stmt % param_placeholders)
+    return_str = ExecuteQuery(stmt, param_placeholders)
+    return str(transfer_id)
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, threaded=True)    
