@@ -4,6 +4,7 @@ import MySQLdb
 import sys
 import datetime
 import random
+import io
 
 #https://it-engineer-lab.com/archives/1181#_INSERT
 
