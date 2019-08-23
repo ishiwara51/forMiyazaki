@@ -160,7 +160,9 @@ class ImprovRnnSequenceGenerator(mm.BaseSequenceGenerator):
     # Make sure that chords and melody start on the same step.
     if chords.start_step < melody.start_step:
       chords.set_length(len(chords) - melody.start_step + chords.start_step)
-
+    print(chords)
+    print(chords.end_step)
+    print(end_step)
     assert chords.end_step == end_step
 
     # Ensure that the melody extends up to the step we want to start generating.
