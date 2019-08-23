@@ -27,7 +27,6 @@ def ExecuteQuery(stmt, param_placeholders):
     cur = conn.cursor()
     cur.execute(stmt, param_placeholders)
     result = cur.fetchall()
-    print(result)
     conn.commit()
     cur.close
     conn.close
@@ -36,6 +35,7 @@ def ExecuteQuery(stmt, param_placeholders):
     with io.StringIO() as f:
         # 標準出力を f に切り替える。
         sys.stdout = f
+        print(result)
         return_str = f.getvalue()
         sys.stdout = sys.__stdout__
     return return_str
