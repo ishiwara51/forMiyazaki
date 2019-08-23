@@ -75,6 +75,7 @@ def transfer():
         param_placeholders = (request.form.get('transfer_id'),)
         print(stmt % param_placeholders)
         if ExecuteQuery(stmt, param_placeholders)=='()':
+            print('asdf')
             return 'Query Failed'
         else:
             stmt = 'update user_info set uuid=%s, updated_at=%s, transfer_id=%s where transfer_id=%s'
