@@ -71,8 +71,8 @@ def first_login():
 @app.route('/transfer', methods=['POST'])
 def transfer():
     if request.form.get('uuid') and request.form.get('transfer_id'):
-        stmt = 'update user_info set uuid=%s, updated_at=%s, transfer_id=%s where transfer_id=%s'
-        param_placeholders = (str(request.form.get('uuid')), str(datetime.datetime.now()), None, str(request.form.get('transfer_id')))
+        stmt = 'select * from user_info where transfer_id=%s'
+        param_placeholders = (request.form.get('transfer_id'),)
         print(stmt % param_placeholders)
         if ExecuteQuery(stmt, param_placeholders)=='()':
             return 'Query Failed'
