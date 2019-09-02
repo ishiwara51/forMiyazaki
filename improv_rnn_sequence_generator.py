@@ -205,10 +205,14 @@ class ImprovRnnSequenceGenerator(mm.BaseSequenceGenerator):
             if cnt == 0:
                 start_time = 0
                 end_time = textlist_list[2].split(' ')[-1]
+                end_time = round(float(end_time)*10000)/10000
             else:
                 start_time = textlist_list[2].split(' ')[-1]
                 end_time = textlist_list[3].split(' ')[-1]
+                end_time = round(float(end_time)*10000)/10000
+                start_time = round(float(start_time)*10000)/10000
 
+            print(float(end_time))
             dict_to_export[str(start_time)] = [float(end_time)-float(start_time),pitch]
     
     print(dict_to_export)
