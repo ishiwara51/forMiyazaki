@@ -32,7 +32,6 @@ class ImprovRnnSequenceGenerator(mm.BaseSequenceGenerator):
   def __init__(self, model, details, steps_per_quarter=4, checkpoint=None,
                bundle=None):
     """Creates an ImprovRnnSequenceGenerator.
-
     Args:
       model: Instance of ImprovRnnModel.
       details: A generator_pb2.GeneratorDetails for this generator.
@@ -205,10 +204,10 @@ class ImprovRnnSequenceGenerator(mm.BaseSequenceGenerator):
             pitch = int(textlist_list[0].split(' ')[-1])-21
             if cnt == 0:
                 start_time = 0
-                end_time = round(float(textlist_list[3].split(' ')[-1]) * 10000)/10000
+                end_time = textlist_list[2].split(' ')[-1]
             else:
-                start_time = round(float(textlist_list[2].split(' ')[-1]) * 10000)/10000
-                end_time = round(float(textlist_list[3].split(' ')[-1]) * 10000)/10000
+                start_time = textlist_list[2].split(' ')[-1]
+                end_time = textlist_list[3].split(' ')[-1]
 
             dict_to_export[str(start_time)] = [float(end_time)-float(start_time),pitch]
     
@@ -230,10 +229,8 @@ class ImprovRnnSequenceGenerator(mm.BaseSequenceGenerator):
 
 def get_generator_map():
   """Returns a map from the generator ID to a SequenceGenerator class creator.
-
   Binds the `config` argument so that the arguments match the
   BaseSequenceGenerator class constructor.
-
   Returns:
     Map from the generator ID to its SequenceGenerator class creator with a
     bound `config` argument.

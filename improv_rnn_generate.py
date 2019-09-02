@@ -175,7 +175,7 @@ def run_with_flags(generator):
   # Create backing chord progression from flags.
   raw_chords = FLAGS.backing_chords.split()
   repeated_chords = [chord for chord in raw_chords
-                     for _ in range(16*(FLAGS.steps_per_chord/FLAGS.steps_per_chord))]
+                     for _ in range(FLAGS.steps_per_chord)]
   backing_chords = magenta.music.ChordProgression(repeated_chords)
 
   # Derive the total number of seconds to generate based on the QPM of the
