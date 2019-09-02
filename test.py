@@ -17,6 +17,7 @@ gen.output_dir = '~/test/tmp/generated'
 gen.FLAGS.num_outputs = 1
 gen.FLAGS.primer_melody = "[60]"
 gen.FLAGS.backing_chords = 'Dmaj7'
+gen.FLAGS.qpm = 120
 
 def ExecuteQuery(stmt, param_placeholders):
     conn = MySQLdb.connect(
@@ -47,15 +48,19 @@ def ExecuteQuery(stmt, param_placeholders):
 def generate():   
     print(request.form.get('primer_melody'))
     print(request.form.get('backing_chords'))
+    print(request.form.get('backing_chords'))
 
     if request.form.get('primer_melody') and request.form.get('backing_chords'):
         gen.FLAGS.primer_melody = request.form.get('primer_melody')
         gen.FLAGS.backing_chords = request.form.get('backing_chords')
+    if request.form.get('qpm'):
+        gen.FLAGS.qpm = int(request.form.get('qpm'))
 
     return_str = gen.main("")
 
     gen.FLAGS.primer_melody = "[60]"
     gen.FLAGS.backing_chords = 'Dmaj7'
+    gen.FLAGS.qpm = 120
 
     return return_str
 
