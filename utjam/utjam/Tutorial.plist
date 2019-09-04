@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Tutorial1</key>
+	<array>
+		<string>ホッホー！チュートリアルへようこそ、じゃ！</string>
+		<string>音楽は楽しむことが第一。
+じゃが、楽しむためにはある程度の上達が必要だと言われておる。</string>
+		<string>このチュートリアルモードでは、
+即興やセッションにおける基礎的なことを
+ステップバイステップで教えていくぞい。</string>
+		<string>いきなり出てきたワシのような鳥に教わるのは不安じゃと？
+ホッホ、心配ご無用じゃ。</string>
+		<string>レッスンを作っとるのはワシじゃなく、
+大学のジャズ研部長だったり、音楽コンクールの優秀ソリスト賞受賞者だったりじゃからのう！</string>
+		<string>さて、おしゃべりはこれくらいにして、レッスンに入っていくぞい。</string>
+		<string>まずは、レッスンを受けた君たちが、最終的にどれくらいの演奏ができるようになるのか？</string>
+		<string>これを、実際にワシが例として演奏してみせるぞい。</string>
+		<string>それでは、よく聴いておくれ。</string>
+		<string>TeacherPlayFlag</string>
+		<array>
+			<integer>16</integer>
+			<integer>1</integer>
+		</array>
+		<string>と、こんな具合じゃ。
+これくらい演奏できれば、きっと君たちの友人も驚くことじゃろう！</string>
+		<string>さて、そのための第一歩として、今回のレッスンでは、</string>
+		<string>ソロをとる上で重要な、
+「良いリズムに乗った演奏」
+について教えていくぞい。</string>
+		<string>最初は E の音だけを使って、
+リズムだけを意識して演奏するんじゃ。</string>
+		<string>まずワシがやってみせよう。
+ワシの演奏をよく聴いておくれ。</string>
+		<string>TeacherPlayFlag</string>
+		<array>
+			<integer>8</integer>
+			<integer>2</integer>
+			<array>
+				<integer>7</integer>
+			</array>
+		</array>
+		<string>ホホッ！少々おかしな演奏じゃが、これがリズム練習というものじゃ。</string>
+		<string>音選びをする前に、正確なリズムを出すこと。
+これを心に留めておくことが重要じゃよ。</string>
+		<string>それでは、今と同じことをやって聴かせておくれ。
+ワシの演奏を完璧にマネする必要はないぞい。
+自分の中で、「こんな感じかな」と思うことができればOKじゃ。</string>
+		<string>PlayerPlayFlag</string>
+		<string>ホー！ なかなかよいぞ！
+もう一度やってみるかの？
+</string>
+		<string>ReplayFlag</string>
+		<string>では、少し音を増やしていくぞい。
+さっきの E に加えて、C# の音も入れてみよう。</string>
+		<string>ワシの演奏をよく聴いておくれ。</string>
+		<string>TeacherPlayFlag</string>
+		<array>
+			<integer>8</integer>
+			<integer>3</integer>
+			<array>
+				<integer>4</integer>
+				<integer>7</integer>
+			</array>
+		</array>
+		<string>では、ワシにやって聴かせておくれ。E と C# を使うんじゃ。
+リズムを大切にな！</string>
+		<string>PlayerPlayFlag</string>
+		<string>さっきより賑やかになったのう！そうは思わんか？</string>
+		<string>ReplayFlag</string>
+		<string>では、さらに音を増やそう。
+一気に三音増やして、C#, E, F#, B, G# じゃ！</string>
+		<string>ワシの演奏をよく聴いておくれ。</string>
+		<string>TeacherPlayFlag</string>
+		<array>
+			<integer>16</integer>
+			<integer>4</integer>
+			<array>
+				<integer>2</integer>
+				<integer>4</integer>
+				<integer>7</integer>
+				<integer>9</integer>
+				<integer>11</integer>
+			</array>
+		</array>
+		<string>音が増えてかなり複雑になったのう・・・
+じゃが、どんな時も「良いリズムで」じゃ！</string>
+		<string>なんども言うが、ワシの真似をすることにこだわる必要はないぞ！
+ここまできたキミなら、自由に、かつ「いいリズム」で演奏ができるはずじゃ！</string>
+		<string>では、ワシにやって聴かせておくれ。
+5音で、「良いリズムで」な！</string>
+		<string>PlayerPlayFlag</string>
+		<string>ホッホー！良いぞ良いぞ！
+「良いリズム」に乗った良い音並び。気持ちの良い演奏じゃのう！</string>
+		<string>ReplayFlag</string>
+		<string>今使った5音は「C#のマイナーペンタトニックスケール」と呼ばれるものじゃ。</string>
+		<string>実はマイナーペンタトニックスケールは、
+あらゆる曲で使うことができる、とても便利でカッコいいスケールなんじゃ。</string>
+		<string>マイナーペンタトニックスケールだけでも、「良いリズム」に乗ってさえ入れば、
+どんな曲でもソロが取れるというわけじゃな！</string>
+		<string>これで今回のレッスンはおしまいじゃ！
+最後にまとめを見て、実際に1コーラス自分で演奏してみて欲しい。</string>
+		<string>では、また次のレッスンで会おう！ホホッ！</string>
+		<string>SummaryFlag</string>
+	</array>
+	<key>Tutorial2 (Coming Soon...)</key>
+	<array>
+		<string>SummaryFlag</string>
+	</array>
+</dict>
+</plist>

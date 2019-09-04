@@ -1,0 +1,24 @@
+PODS:
+  - MYPassthrough (0.5)
+  - NendSDK_iOS (5.2.0)
+  - ReachabilitySwift (4.3.1)
+
+DEPENDENCIES:
+  - MYPassthrough
+  - NendSDK_iOS
+  - ReachabilitySwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MYPassthrough
+    - NendSDK_iOS
+    - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  MYPassthrough: 2ba3f88030f3817b036c2804691f795b14f88cb5
+  NendSDK_iOS: f795bb4e64dddfd254e11b9346921abe388fc061
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+
+PODFILE CHECKSUM: 614529a6e60ed5a3d34bc532eda7373294dfd9f6
+
+COCOAPODS: 1.7.5

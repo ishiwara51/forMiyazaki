@@ -1,0 +1,1267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		32F8F131B2CE91C36D0CCD98F500423F /* NendSDK_iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 626A328E360A017CEB3433E53AFCF091 /* Build configuration list for PBXAggregateTarget "NendSDK_iOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = NendSDK_iOS;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		09944176280C980EB49784DBCA380462 /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D08E098FABC9FB0F6AD58522B1C1697C /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26181F0BF7B4DCBACB30086F067D0407 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		26619059D0A123FD0BF4BE026B7683CE /* Pods-utjamBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C8C6762D5227308AA41ACEDD61FAC6 /* Pods-utjamBluetooth-dummy.m */; };
+		2778CB02A9DD47CAE1332ADC0726D3A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		2BFA94C5CA42F0841FE7F07737155CA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		2EBDC24782E2BB59FA70780FF7FED7F9 /* MYPassthrough-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 312DF33FC163D5791C02D3430BF7FB9A /* MYPassthrough-dummy.m */; };
+		33CF97469D3F267E887B8320493B195A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		3DB880F73CD8D512E2F8C3EE447F6400 /* Pods-utjamBluetooth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93C3F6517358AA09A215D30B87991397 /* Pods-utjamBluetooth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4726FAB879FA8D20EA7F74FF9D121C0A /* PassthroughManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F8E9D13C3AAAC52E08F47F895F4C0 /* PassthroughManager.swift */; };
+		4C3E37D98E5CE663E739A04C0565F979 /* Pods-utjamBluetoothUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E0E82482A5C0CD515DDED1F49950AD /* Pods-utjamBluetoothUITests-dummy.m */; };
+		60D79A96941C04413BB08F6001828AA6 /* Pods-utjamBluetoothUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A48349977C3B3C02D0D4D9B464EE260 /* Pods-utjamBluetoothUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66AD548CAFF6E39C9CB20CF7DF4E27A5 /* Pods-utjamBluetoothTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A71FBF89EB59B9104A38D3F476B26B /* Pods-utjamBluetoothTests-dummy.m */; };
+		68B50A2A3D45AB805A83539977D8B626 /* MYPassthrough-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 194EB239A33F0000377AD87FB880524F /* MYPassthrough-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89A589D04411197399D7FCF7159AAE0A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE968254130456936592FAD883A845 /* CoreTelephony.framework */; };
+		8EE7FC571C821FB76ECBDF93401C375E /* PassthroughController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7B5B4ADE87D17E76749423C142B1FA /* PassthroughController.swift */; };
+		AC96F44279E61358242F26840D4853F0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FA55A4D1702E47B417B0A5C71114B1 /* Reachability.swift */; };
+		AFC6F3AD16A508C1E94FDAF3542AB682 /* Pods-utjamBluetoothTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFBF561BE643C83272F09D99D0C7A81E /* Pods-utjamBluetoothTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E35BAD42D351D3A4099F1A79670D8AF5 /* PassthroughEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C221E2714EF621C34F7F82EE0A6E302E /* PassthroughEntities.swift */; };
+		E5938189529B1F8BD074BB166C8BDE57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64256263F0F1E673BCBD67DF6958420 /* SystemConfiguration.framework */; };
+		E5F6ACACDF29D937A21E7DEC85A13E3E /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA60B559A804D87B0AF1801A12FC3922 /* ReachabilitySwift-dummy.m */; };
+		E82D2ADA5C34AA981063FEC046224E7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07E62437D12F9421FE496B75BB20B2A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B00B2C167CD783351BD1D00BD5AD1F8;
+			remoteInfo = ReachabilitySwift;
+		};
+		0FF45B95C3969FF1FEC8B88FCEEEDC70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F8F131B2CE91C36D0CCD98F500423F;
+			remoteInfo = NendSDK_iOS;
+		};
+		13A65538929432D7454BF216C98A269E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61912F3EFD7A5852EAE9942DB7048DC2;
+			remoteInfo = "Pods-utjamBluetooth";
+		};
+		B80253CF1A946640C67A60F739B6D548 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 215AC30D8D13E8C655C02D1FEDC740FC;
+			remoteInfo = MYPassthrough;
+		};
+		E857910FAAA7C06769B7E768428A34B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61912F3EFD7A5852EAE9942DB7048DC2;
+			remoteInfo = "Pods-utjamBluetooth";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A62397C27067AF44190E0E6EF14B00 /* Pods-utjamBluetoothUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-utjamBluetoothUITests-Info.plist"; sourceTree = "<group>"; };
+		021BB2ADE489ECB6C24D39744A7FDCDF /* MYPassthrough.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MYPassthrough.modulemap; sourceTree = "<group>"; };
+		08C29BBB70207C95307ADB1369F7600F /* Pods-utjamBluetooth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-utjamBluetooth.modulemap"; sourceTree = "<group>"; };
+		0CF7705813C73EC26279DD96F6D72743 /* Pods-utjamBluetooth-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-utjamBluetooth-acknowledgements.markdown"; sourceTree = "<group>"; };
+		14FA55A4D1702E47B417B0A5C71114B1 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Sources/Reachability.swift; sourceTree = "<group>"; };
+		18C59258088B0529FA28D63080F28737 /* Pods-utjamBluetooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-utjamBluetooth.debug.xcconfig"; sourceTree = "<group>"; };
+		194EB239A33F0000377AD87FB880524F /* MYPassthrough-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MYPassthrough-umbrella.h"; sourceTree = "<group>"; };
+		1D7B5B4ADE87D17E76749423C142B1FA /* PassthroughController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PassthroughController.swift; path = Source/PassthroughController.swift; sourceTree = "<group>"; };
+		21B03CA622E690725A6626C088E1D09F /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27685F36079C4CCDE153DFBA2497B6E0 /* Pods-utjamBluetoothTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-utjamBluetoothTests-Info.plist"; sourceTree = "<group>"; };
+		2E3DB989138D06210DB0CE9871BA5F4F /* Pods_utjamBluetoothTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_utjamBluetoothTests.framework; path = "Pods-utjamBluetoothTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		312DF33FC163D5791C02D3430BF7FB9A /* MYPassthrough-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MYPassthrough-dummy.m"; sourceTree = "<group>"; };
+		364932296E82B4D18DE0C32F94CD828C /* MYPassthrough.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MYPassthrough.framework; path = MYPassthrough.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43769A9C45184FC05789FCA3EF3A9E97 /* Pods-utjamBluetoothTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-utjamBluetoothTests.modulemap"; sourceTree = "<group>"; };
+		48A01EAFB1F7D40CD39335E31FE21E69 /* Pods-utjamBluetooth-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-utjamBluetooth-resources.sh"; sourceTree = "<group>"; };
+		49FC2F19FB852D0573FC69AC6822B4D0 /* Pods-utjamBluetoothUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-utjamBluetoothUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5460D528E24E3CEA76FAD18FBB32385B /* Pods-utjamBluetoothTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-utjamBluetoothTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		54BCEEE082D60C16817E406463868805 /* Pods-utjamBluetooth-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-utjamBluetooth-frameworks.sh"; sourceTree = "<group>"; };
+		57B84111D906C2A092A12EEAC6EF7FC0 /* NendAdResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = NendAdResource.bundle; path = NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle; sourceTree = "<group>"; };
+		5A48349977C3B3C02D0D4D9B464EE260 /* Pods-utjamBluetoothUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-utjamBluetoothUITests-umbrella.h"; sourceTree = "<group>"; };
+		5DE4F26D963E523D7DA6BF017213C3FC /* Pods-utjamBluetooth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-utjamBluetooth-Info.plist"; sourceTree = "<group>"; };
+		5F34BD0BAB65CD83B59B04E65B455CB7 /* Pods-utjamBluetoothUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-utjamBluetoothUITests.modulemap"; sourceTree = "<group>"; };
+		6B6C8090461DB270605436645A5CC8B4 /* MYPassthrough-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MYPassthrough-Info.plist"; sourceTree = "<group>"; };
+		74E711D690C1260BFA90C9AEF902E5BD /* Pods-utjamBluetooth-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-utjamBluetooth-acknowledgements.plist"; sourceTree = "<group>"; };
+		814EA4AD8AA96D4B775EBB650BC7881B /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
+		8E47EB9AAC6303E9F9A6C85419A5631C /* Pods-utjamBluetoothUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-utjamBluetoothUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		93C3F6517358AA09A215D30B87991397 /* Pods-utjamBluetooth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-utjamBluetooth-umbrella.h"; sourceTree = "<group>"; };
+		96A71FBF89EB59B9104A38D3F476B26B /* Pods-utjamBluetoothTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-utjamBluetoothTests-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A166D44A164639D8B85B81F547EF2D1D /* ReachabilitySwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ReachabilitySwift-Info.plist"; sourceTree = "<group>"; };
+		A4EC2F2BBD33B5E05D5814ED4F4D53E4 /* Pods-utjamBluetooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-utjamBluetooth.release.xcconfig"; sourceTree = "<group>"; };
+		A8C8C6762D5227308AA41ACEDD61FAC6 /* Pods-utjamBluetooth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-utjamBluetooth-dummy.m"; sourceTree = "<group>"; };
+		AA5E418EE90974C771526542AA74C0F3 /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
+		AC0D30F2B57B1359240DBFE6F2B23DA5 /* Pods-utjamBluetoothTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-utjamBluetoothTests.release.xcconfig"; sourceTree = "<group>"; };
+		AC3581E51FC506B79AE85FC1D0CDC372 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
+		AFBF561BE643C83272F09D99D0C7A81E /* Pods-utjamBluetoothTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-utjamBluetoothTests-umbrella.h"; sourceTree = "<group>"; };
+		AFCC5C3AAAEB341B2094FF7585377355 /* Pods-utjamBluetoothUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-utjamBluetoothUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFF87B6136378E2CE8AC8E512F85C006 /* MYPassthrough.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MYPassthrough.xcconfig; sourceTree = "<group>"; };
+		C1A40B235A6DB443C3A48E5DB0D2BC00 /* NendAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NendAd.framework; path = NendAd.embeddedframework/NendAd.framework; sourceTree = "<group>"; };
+		C221E2714EF621C34F7F82EE0A6E302E /* PassthroughEntities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PassthroughEntities.swift; path = Source/PassthroughEntities.swift; sourceTree = "<group>"; };
+		C3C5D2455F45580D7329F906CEF9E9C1 /* Pods-utjamBluetoothUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-utjamBluetoothUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C4E0E82482A5C0CD515DDED1F49950AD /* Pods-utjamBluetoothUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-utjamBluetoothUITests-dummy.m"; sourceTree = "<group>"; };
+		D08E098FABC9FB0F6AD58522B1C1697C /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
+		D22CEC219F0BB79E742A58BFC796D0BA /* Pods_utjamBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_utjamBluetooth.framework; path = "Pods-utjamBluetooth.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D86DB6D01354DA53237D1F8A15FB1D28 /* Pods_utjamBluetoothUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_utjamBluetoothUITests.framework; path = "Pods-utjamBluetoothUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB51A7B40362CFDBBCA6B3B84E338824 /* Pods-utjamBluetoothTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-utjamBluetoothTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DCED01FCFE7D04041506B9C79DB863ED /* Pods-utjamBluetoothTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-utjamBluetoothTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4978F21C778E419F1F246040E7B91D8 /* MYPassthrough-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MYPassthrough-prefix.pch"; sourceTree = "<group>"; };
+		EA60B559A804D87B0AF1801A12FC3922 /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		F64256263F0F1E673BCBD67DF6958420 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		F6EE968254130456936592FAD883A845 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		F80967583D84E7BB6159846E45941629 /* NendSDK_iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NendSDK_iOS.xcconfig; sourceTree = "<group>"; };
+		FF3F8E9D13C3AAAC52E08F47F895F4C0 /* PassthroughManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PassthroughManager.swift; path = Source/PassthroughManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05FC1F31F6AC25B5B445C9BBEBB581D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82D2ADA5C34AA981063FEC046224E7A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		170558794093AC83A57DE1A7C719D199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26181F0BF7B4DCBACB30086F067D0407 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D20EAF7C57CCAE700F10B67B6FFEA22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFA94C5CA42F0841FE7F07737155CA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A37A51219ED31062DE51A3E139BF37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89A589D04411197399D7FCF7159AAE0A /* CoreTelephony.framework in Frameworks */,
+				33CF97469D3F267E887B8320493B195A /* Foundation.framework in Frameworks */,
+				E5938189529B1F8BD074BB166C8BDE57 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D219A7531F4114C58C0FCB652101E1B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2778CB02A9DD47CAE1332ADC0726D3A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65C892BC3ADB577FE47BB0D4B61FE2E0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0487A0118D48AFEE346228E2BEDAFF84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1A40B235A6DB443C3A48E5DB0D2BC00 /* NendAd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0FF08F205119682A0F5AC8DAD313E91A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA5E418EE90974C771526542AA74C0F3 /* ReachabilitySwift.modulemap */,
+				AC3581E51FC506B79AE85FC1D0CDC372 /* ReachabilitySwift.xcconfig */,
+				EA60B559A804D87B0AF1801A12FC3922 /* ReachabilitySwift-dummy.m */,
+				A166D44A164639D8B85B81F547EF2D1D /* ReachabilitySwift-Info.plist */,
+				814EA4AD8AA96D4B775EBB650BC7881B /* ReachabilitySwift-prefix.pch */,
+				D08E098FABC9FB0F6AD58522B1C1697C /* ReachabilitySwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
+			sourceTree = "<group>";
+		};
+		16A48BC18473D5B0973AAE7C4A35A50D /* Pods-utjamBluetoothUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F34BD0BAB65CD83B59B04E65B455CB7 /* Pods-utjamBluetoothUITests.modulemap */,
+				49FC2F19FB852D0573FC69AC6822B4D0 /* Pods-utjamBluetoothUITests-acknowledgements.markdown */,
+				8E47EB9AAC6303E9F9A6C85419A5631C /* Pods-utjamBluetoothUITests-acknowledgements.plist */,
+				C4E0E82482A5C0CD515DDED1F49950AD /* Pods-utjamBluetoothUITests-dummy.m */,
+				00A62397C27067AF44190E0E6EF14B00 /* Pods-utjamBluetoothUITests-Info.plist */,
+				5A48349977C3B3C02D0D4D9B464EE260 /* Pods-utjamBluetoothUITests-umbrella.h */,
+				AFCC5C3AAAEB341B2094FF7585377355 /* Pods-utjamBluetoothUITests.debug.xcconfig */,
+				C3C5D2455F45580D7329F906CEF9E9C1 /* Pods-utjamBluetoothUITests.release.xcconfig */,
+			);
+			name = "Pods-utjamBluetoothUITests";
+			path = "Target Support Files/Pods-utjamBluetoothUITests";
+			sourceTree = "<group>";
+		};
+		2280CEF7920FC1C4888D41EBAF563A54 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F80967583D84E7BB6159846E45941629 /* NendSDK_iOS.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NendSDK_iOS";
+			sourceTree = "<group>";
+		};
+		2294D69EED89DE6A7CF9E8AD9E2F06E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78865EA145EF89834E4D7D4207D0CB60 /* MYPassthrough */,
+				8FBC5F398FB09CCB28804639D7369680 /* NendSDK_iOS */,
+				AC433B7AACD8DC5274EFB64BA9188130 /* ReachabilitySwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		30DB01E06A48B104EA7147DC48183FE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57B84111D906C2A092A12EEAC6EF7FC0 /* NendAdResource.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		31FF6F58E093168D830146AAA21F3245 /* Pods-utjamBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				08C29BBB70207C95307ADB1369F7600F /* Pods-utjamBluetooth.modulemap */,
+				0CF7705813C73EC26279DD96F6D72743 /* Pods-utjamBluetooth-acknowledgements.markdown */,
+				74E711D690C1260BFA90C9AEF902E5BD /* Pods-utjamBluetooth-acknowledgements.plist */,
+				A8C8C6762D5227308AA41ACEDD61FAC6 /* Pods-utjamBluetooth-dummy.m */,
+				54BCEEE082D60C16817E406463868805 /* Pods-utjamBluetooth-frameworks.sh */,
+				5DE4F26D963E523D7DA6BF017213C3FC /* Pods-utjamBluetooth-Info.plist */,
+				48A01EAFB1F7D40CD39335E31FE21E69 /* Pods-utjamBluetooth-resources.sh */,
+				93C3F6517358AA09A215D30B87991397 /* Pods-utjamBluetooth-umbrella.h */,
+				18C59258088B0529FA28D63080F28737 /* Pods-utjamBluetooth.debug.xcconfig */,
+				A4EC2F2BBD33B5E05D5814ED4F4D53E4 /* Pods-utjamBluetooth.release.xcconfig */,
+			);
+			name = "Pods-utjamBluetooth";
+			path = "Target Support Files/Pods-utjamBluetooth";
+			sourceTree = "<group>";
+		};
+		65C892BC3ADB577FE47BB0D4B61FE2E0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F6EE968254130456936592FAD883A845 /* CoreTelephony.framework */,
+				D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */,
+				F64256263F0F1E673BCBD67DF6958420 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6D2D3065F4DA888AFEECFB1C204BAA52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				364932296E82B4D18DE0C32F94CD828C /* MYPassthrough.framework */,
+				D22CEC219F0BB79E742A58BFC796D0BA /* Pods_utjamBluetooth.framework */,
+				2E3DB989138D06210DB0CE9871BA5F4F /* Pods_utjamBluetoothTests.framework */,
+				D86DB6D01354DA53237D1F8A15FB1D28 /* Pods_utjamBluetoothUITests.framework */,
+				21B03CA622E690725A6626C088E1D09F /* Reachability.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78865EA145EF89834E4D7D4207D0CB60 /* MYPassthrough */ = {
+			isa = PBXGroup;
+			children = (
+				1D7B5B4ADE87D17E76749423C142B1FA /* PassthroughController.swift */,
+				C221E2714EF621C34F7F82EE0A6E302E /* PassthroughEntities.swift */,
+				FF3F8E9D13C3AAAC52E08F47F895F4C0 /* PassthroughManager.swift */,
+				FF2798DB5C65630A50FF2AF6E0CB9E06 /* Support Files */,
+			);
+			name = MYPassthrough;
+			path = MYPassthrough;
+			sourceTree = "<group>";
+		};
+		8FBC5F398FB09CCB28804639D7369680 /* NendSDK_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0487A0118D48AFEE346228E2BEDAFF84 /* Frameworks */,
+				30DB01E06A48B104EA7147DC48183FE3 /* Resources */,
+				2280CEF7920FC1C4888D41EBAF563A54 /* Support Files */,
+			);
+			name = NendSDK_iOS;
+			path = NendSDK_iOS;
+			sourceTree = "<group>";
+		};
+		AC433B7AACD8DC5274EFB64BA9188130 /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				14FA55A4D1702E47B417B0A5C71114B1 /* Reachability.swift */,
+				0FF08F205119682A0F5AC8DAD313E91A /* Support Files */,
+			);
+			name = ReachabilitySwift;
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				2294D69EED89DE6A7CF9E8AD9E2F06E2 /* Pods */,
+				6D2D3065F4DA888AFEECFB1C204BAA52 /* Products */,
+				E001A6E08DBD28075BDBEBDB71F35144 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E001A6E08DBD28075BDBEBDB71F35144 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31FF6F58E093168D830146AAA21F3245 /* Pods-utjamBluetooth */,
+				F27ACDE592F05D307B7288A4894C380D /* Pods-utjamBluetoothTests */,
+				16A48BC18473D5B0973AAE7C4A35A50D /* Pods-utjamBluetoothUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F27ACDE592F05D307B7288A4894C380D /* Pods-utjamBluetoothTests */ = {
+			isa = PBXGroup;
+			children = (
+				43769A9C45184FC05789FCA3EF3A9E97 /* Pods-utjamBluetoothTests.modulemap */,
+				DB51A7B40362CFDBBCA6B3B84E338824 /* Pods-utjamBluetoothTests-acknowledgements.markdown */,
+				5460D528E24E3CEA76FAD18FBB32385B /* Pods-utjamBluetoothTests-acknowledgements.plist */,
+				96A71FBF89EB59B9104A38D3F476B26B /* Pods-utjamBluetoothTests-dummy.m */,
+				27685F36079C4CCDE153DFBA2497B6E0 /* Pods-utjamBluetoothTests-Info.plist */,
+				AFBF561BE643C83272F09D99D0C7A81E /* Pods-utjamBluetoothTests-umbrella.h */,
+				DCED01FCFE7D04041506B9C79DB863ED /* Pods-utjamBluetoothTests.debug.xcconfig */,
+				AC0D30F2B57B1359240DBFE6F2B23DA5 /* Pods-utjamBluetoothTests.release.xcconfig */,
+			);
+			name = "Pods-utjamBluetoothTests";
+			path = "Target Support Files/Pods-utjamBluetoothTests";
+			sourceTree = "<group>";
+		};
+		FF2798DB5C65630A50FF2AF6E0CB9E06 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				021BB2ADE489ECB6C24D39744A7FDCDF /* MYPassthrough.modulemap */,
+				AFF87B6136378E2CE8AC8E512F85C006 /* MYPassthrough.xcconfig */,
+				312DF33FC163D5791C02D3430BF7FB9A /* MYPassthrough-dummy.m */,
+				6B6C8090461DB270605436645A5CC8B4 /* MYPassthrough-Info.plist */,
+				E4978F21C778E419F1F246040E7B91D8 /* MYPassthrough-prefix.pch */,
+				194EB239A33F0000377AD87FB880524F /* MYPassthrough-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MYPassthrough";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09F7B7D04C454C16C0015640CF269F7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09944176280C980EB49784DBCA380462 /* ReachabilitySwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		109A3E0D2C4E1D020D4A2BA3BCFF96D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFC6F3AD16A508C1E94FDAF3542AB682 /* Pods-utjamBluetoothTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		166188DF09E9990D94E4E74FA579DE81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B50A2A3D45AB805A83539977D8B626 /* MYPassthrough-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70EC419939B66CCBE5758FE5DFFAEDBE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB880F73CD8D512E2F8C3EE447F6400 /* Pods-utjamBluetooth-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0BAA4E8C709FE5BE83C4A755E6F509 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60D79A96941C04413BB08F6001828AA6 /* Pods-utjamBluetoothUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E50A4613BA081C4F47DEEC1F9B9176BA /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
+			buildPhases = (
+				09F7B7D04C454C16C0015640CF269F7E /* Headers */,
+				9C9FF78F6878BCE13B73B6BB5DD0A609 /* Sources */,
+				92A37A51219ED31062DE51A3E139BF37 /* Frameworks */,
+				1EA4E360633A1D5CC11F6E9C4EEC2475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReachabilitySwift;
+			productName = ReachabilitySwift;
+			productReference = 21B03CA622E690725A6626C088E1D09F /* Reachability.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		215AC30D8D13E8C655C02D1FEDC740FC /* MYPassthrough */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EE7DE2A7F52C8BA86D1E715CE4A75A9 /* Build configuration list for PBXNativeTarget "MYPassthrough" */;
+			buildPhases = (
+				166188DF09E9990D94E4E74FA579DE81 /* Headers */,
+				9EC87BA2E2F82B7EFAD7E82D91E9855F /* Sources */,
+				8D20EAF7C57CCAE700F10B67B6FFEA22 /* Frameworks */,
+				DBF30235FB0540CEC839FF79919A08A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MYPassthrough;
+			productName = MYPassthrough;
+			productReference = 364932296E82B4D18DE0C32F94CD828C /* MYPassthrough.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2A93BD7DDC35D2D84E2A6A1BFE6379DD /* Pods-utjamBluetoothUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E38268462AE09B8195DCE19FB1B4EA0B /* Build configuration list for PBXNativeTarget "Pods-utjamBluetoothUITests" */;
+			buildPhases = (
+				AA0BAA4E8C709FE5BE83C4A755E6F509 /* Headers */,
+				A7E6313DD0A31F68D831EEC2CBEA55F8 /* Sources */,
+				170558794093AC83A57DE1A7C719D199 /* Frameworks */,
+				87BC623DA7674F5EC4E18B493B9728E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27F3F7045B916440DC2A59471667095F /* PBXTargetDependency */,
+			);
+			name = "Pods-utjamBluetoothUITests";
+			productName = "Pods-utjamBluetoothUITests";
+			productReference = D86DB6D01354DA53237D1F8A15FB1D28 /* Pods_utjamBluetoothUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		61912F3EFD7A5852EAE9942DB7048DC2 /* Pods-utjamBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF75803FABB5CA36226A57F396676672 /* Build configuration list for PBXNativeTarget "Pods-utjamBluetooth" */;
+			buildPhases = (
+				70EC419939B66CCBE5758FE5DFFAEDBE /* Headers */,
+				42D508C89AFA4E4ED5A16105A92906A0 /* Sources */,
+				D219A7531F4114C58C0FCB652101E1B2 /* Frameworks */,
+				3760AC155C0A8AC928E7EB6AAC68E09A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4FC137685F15DE110FA44F1305CA427 /* PBXTargetDependency */,
+				7721AAA270DD140449DA39DD1E9934AA /* PBXTargetDependency */,
+				436949FC24BDD420947F287C9C87875A /* PBXTargetDependency */,
+			);
+			name = "Pods-utjamBluetooth";
+			productName = "Pods-utjamBluetooth";
+			productReference = D22CEC219F0BB79E742A58BFC796D0BA /* Pods_utjamBluetooth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CDF828A5AC62B86B7981F46B22A2597C /* Pods-utjamBluetoothTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44226B8F424CDE3BB817F794E5ECA026 /* Build configuration list for PBXNativeTarget "Pods-utjamBluetoothTests" */;
+			buildPhases = (
+				109A3E0D2C4E1D020D4A2BA3BCFF96D5 /* Headers */,
+				A31965247F39FB20F01A499F882988A2 /* Sources */,
+				05FC1F31F6AC25B5B445C9BBEBB581D3 /* Frameworks */,
+				2B890A981647A36E544E484DD1A7530A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				943D5787631715B58D09BFE4BF74BCD4 /* PBXTargetDependency */,
+			);
+			name = "Pods-utjamBluetoothTests";
+			productName = "Pods-utjamBluetoothTests";
+			productReference = 2E3DB989138D06210DB0CE9871BA5F4F /* Pods_utjamBluetoothTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6D2D3065F4DA888AFEECFB1C204BAA52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				215AC30D8D13E8C655C02D1FEDC740FC /* MYPassthrough */,
+				32F8F131B2CE91C36D0CCD98F500423F /* NendSDK_iOS */,
+				61912F3EFD7A5852EAE9942DB7048DC2 /* Pods-utjamBluetooth */,
+				CDF828A5AC62B86B7981F46B22A2597C /* Pods-utjamBluetoothTests */,
+				2A93BD7DDC35D2D84E2A6A1BFE6379DD /* Pods-utjamBluetoothUITests */,
+				0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EA4E360633A1D5CC11F6E9C4EEC2475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B890A981647A36E544E484DD1A7530A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3760AC155C0A8AC928E7EB6AAC68E09A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87BC623DA7674F5EC4E18B493B9728E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBF30235FB0540CEC839FF79919A08A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42D508C89AFA4E4ED5A16105A92906A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26619059D0A123FD0BF4BE026B7683CE /* Pods-utjamBluetooth-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C9FF78F6878BCE13B73B6BB5DD0A609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC96F44279E61358242F26840D4853F0 /* Reachability.swift in Sources */,
+				E5F6ACACDF29D937A21E7DEC85A13E3E /* ReachabilitySwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EC87BA2E2F82B7EFAD7E82D91E9855F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EBDC24782E2BB59FA70780FF7FED7F9 /* MYPassthrough-dummy.m in Sources */,
+				8EE7FC571C821FB76ECBDF93401C375E /* PassthroughController.swift in Sources */,
+				E35BAD42D351D3A4099F1A79670D8AF5 /* PassthroughEntities.swift in Sources */,
+				4726FAB879FA8D20EA7F74FF9D121C0A /* PassthroughManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31965247F39FB20F01A499F882988A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66AD548CAFF6E39C9CB20CF7DF4E27A5 /* Pods-utjamBluetoothTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E6313DD0A31F68D831EEC2CBEA55F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3E37D98E5CE663E739A04C0565F979 /* Pods-utjamBluetoothUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27F3F7045B916440DC2A59471667095F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-utjamBluetooth";
+			target = 61912F3EFD7A5852EAE9942DB7048DC2 /* Pods-utjamBluetooth */;
+			targetProxy = E857910FAAA7C06769B7E768428A34B1 /* PBXContainerItemProxy */;
+		};
+		436949FC24BDD420947F287C9C87875A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = 0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */;
+			targetProxy = 07E62437D12F9421FE496B75BB20B2A2 /* PBXContainerItemProxy */;
+		};
+		7721AAA270DD140449DA39DD1E9934AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NendSDK_iOS;
+			target = 32F8F131B2CE91C36D0CCD98F500423F /* NendSDK_iOS */;
+			targetProxy = 0FF45B95C3969FF1FEC8B88FCEEEDC70 /* PBXContainerItemProxy */;
+		};
+		943D5787631715B58D09BFE4BF74BCD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-utjamBluetooth";
+			target = 61912F3EFD7A5852EAE9942DB7048DC2 /* Pods-utjamBluetooth */;
+			targetProxy = 13A65538929432D7454BF216C98A269E /* PBXContainerItemProxy */;
+		};
+		A4FC137685F15DE110FA44F1305CA427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MYPassthrough;
+			target = 215AC30D8D13E8C655C02D1FEDC740FC /* MYPassthrough */;
+			targetProxy = B80253CF1A946640C67A60F739B6D548 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20913E72633B4770E7CA3B201831E180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F80967583D84E7BB6159846E45941629 /* NendSDK_iOS.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FA31AF1A51CD6A4987D730FBD96EFA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C59258088B0529FA28D63080F28737 /* Pods-utjamBluetooth.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-utjamBluetooth/Pods-utjamBluetooth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-utjamBluetooth/Pods-utjamBluetooth.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		624C49EEF8DF3AC96FDCBAE124E23093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFCC5C3AAAEB341B2094FF7585377355 /* Pods-utjamBluetoothUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-utjamBluetoothUITests/Pods-utjamBluetoothUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-utjamBluetoothUITests/Pods-utjamBluetoothUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		718C27BF1E88B8FB12D561D98F8DB6AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF87B6136378E2CE8AC8E512F85C006 /* MYPassthrough.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MYPassthrough/MYPassthrough-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MYPassthrough/MYPassthrough-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MYPassthrough/MYPassthrough.modulemap";
+				PRODUCT_MODULE_NAME = MYPassthrough;
+				PRODUCT_NAME = MYPassthrough;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		82CD2CB70CB5B2A9511466D348A282A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF87B6136378E2CE8AC8E512F85C006 /* MYPassthrough.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MYPassthrough/MYPassthrough-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MYPassthrough/MYPassthrough-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MYPassthrough/MYPassthrough.modulemap";
+				PRODUCT_MODULE_NAME = MYPassthrough;
+				PRODUCT_NAME = MYPassthrough;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8873505C0578C76C6942D8FD77E4C8EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0D30F2B57B1359240DBFE6F2B23DA5 /* Pods-utjamBluetoothTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-utjamBluetoothTests/Pods-utjamBluetoothTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-utjamBluetoothTests/Pods-utjamBluetoothTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D9C5DF25380D913350BDCA225353A58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC3581E51FC506B79AE85FC1D0CDC372 /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A12E3802E22AC7A5DC21F7E8D55A5350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4EC2F2BBD33B5E05D5814ED4F4D53E4 /* Pods-utjamBluetooth.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-utjamBluetooth/Pods-utjamBluetooth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-utjamBluetooth/Pods-utjamBluetooth.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A74D2AD22ADDBD5BEF4DCCB556EFDE37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F80967583D84E7BB6159846E45941629 /* NendSDK_iOS.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0C07EBBB0F5335ED6C679FFB687F2C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCED01FCFE7D04041506B9C79DB863ED /* Pods-utjamBluetoothTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-utjamBluetoothTests/Pods-utjamBluetoothTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-utjamBluetoothTests/Pods-utjamBluetoothTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4C9BAADC9ECAA6F76BCDD116B7BAC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3C5D2455F45580D7329F906CEF9E9C1 /* Pods-utjamBluetoothUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-utjamBluetoothUITests/Pods-utjamBluetoothUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-utjamBluetoothUITests/Pods-utjamBluetoothUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4A7F9E3FE3B37118A6FCEBE7DA678CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC3581E51FC506B79AE85FC1D0CDC372 /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EE7DE2A7F52C8BA86D1E715CE4A75A9 /* Build configuration list for PBXNativeTarget "MYPassthrough" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82CD2CB70CB5B2A9511466D348A282A7 /* Debug */,
+				718C27BF1E88B8FB12D561D98F8DB6AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44226B8F424CDE3BB817F794E5ECA026 /* Build configuration list for PBXNativeTarget "Pods-utjamBluetoothTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C07EBBB0F5335ED6C679FFB687F2C9 /* Debug */,
+				8873505C0578C76C6942D8FD77E4C8EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		626A328E360A017CEB3433E53AFCF091 /* Build configuration list for PBXAggregateTarget "NendSDK_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A74D2AD22ADDBD5BEF4DCCB556EFDE37 /* Debug */,
+				20913E72633B4770E7CA3B201831E180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF75803FABB5CA36226A57F396676672 /* Build configuration list for PBXNativeTarget "Pods-utjamBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FA31AF1A51CD6A4987D730FBD96EFA8 /* Debug */,
+				A12E3802E22AC7A5DC21F7E8D55A5350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E38268462AE09B8195DCE19FB1B4EA0B /* Build configuration list for PBXNativeTarget "Pods-utjamBluetoothUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624C49EEF8DF3AC96FDCBAE124E23093 /* Debug */,
+				B4C9BAADC9ECAA6F76BCDD116B7BAC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E50A4613BA081C4F47DEEC1F9B9176BA /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A7F9E3FE3B37118A6FCEBE7DA678CF /* Debug */,
+				8D9C5DF25380D913350BDCA225353A58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

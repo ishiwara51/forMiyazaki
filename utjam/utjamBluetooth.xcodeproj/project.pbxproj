@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		310D4CBB1516112CECC72254 /* Pods_utjamBluetoothTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9086760BA88285789629E49B /* Pods_utjamBluetoothTests.framework */; };
+		5F1AE8D8AF92D1EF30E9D107 /* Pods_utjamBluetoothUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB04BF7FF8DBF2F8AD29BB0B /* Pods_utjamBluetoothUITests.framework */; };
+		AAF258919C8064E21335CCB3 /* Pods_utjamBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05ADFEF7DFBFD88B9FD49FC8 /* Pods_utjamBluetooth.framework */; };
+		EC35D45422F6D24D00332CA2 /* 1p.png in Resources */ = {isa = PBXBuildFile; fileRef = EC35D44E22F6D24D00332CA2 /* 1p.png */; };
+		EC35D45522F6D24D00332CA2 /* back_base.png in Resources */ = {isa = PBXBuildFile; fileRef = EC35D44F22F6D24D00332CA2 /* back_base.png */; };
+		EC35D45622F6D24D00332CA2 /* back_drum.png in Resources */ = {isa = PBXBuildFile; fileRef = EC35D45022F6D24D00332CA2 /* back_drum.png */; };
+		EC35D45822F6D24D00332CA2 /* back_pf.png in Resources */ = {isa = PBXBuildFile; fileRef = EC35D45222F6D24D00332CA2 /* back_pf.png */; };
+		EC35D45C22FD85AE00332CA2 /* 2p.png in Resources */ = {isa = PBXBuildFile; fileRef = EC35D45B22FD85AE00332CA2 /* 2p.png */; };
+		EC35D45E22FD8CD500332CA2 /* OptionSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC35D45D22FD8CD500332CA2 /* OptionSelectViewController.swift */; };
+		ECB01AC223092BC500676F70 /* Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECB01AC123092BC500676F70 /* Menu.plist */; };
+		ECB01ADB230949D500676F70 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB01ADA230949D500676F70 /* WebKit.framework */; };
+		ECB01AE2230BF25C00676F70 /* html in Resources */ = {isa = PBXBuildFile; fileRef = ECB01AE1230BF25C00676F70 /* html */; };
+		ECB8E96822CDBF8B00441304 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB8E96722CDBF8B00441304 /* MultipeerConnectivity.framework */; };
+		ECCA4E142307FEE300EFA6BA /* TutorialSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA4E132307FEE300EFA6BA /* TutorialSummaryViewController.swift */; };
+		ECCD2A9A23152024009C3B76 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECCD2A9923152024009C3B76 /* NativeAdView.xib */; };
+		ECF03F6E22D4499E003CDDF6 /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF03F6D22D4499E003CDDF6 /* BluetoothService.swift */; };
+		FC32FF9A22FD2FC600D68471 /* Tutorial.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC32FF9922FD2FC600D68471 /* Tutorial.plist */; };
+		FC35961822DB84C4007DD759 /* Utility.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC35961722DB84C4007DD759 /* Utility.plist */; };
+		FC35964422DB85B9007DD759 /* bgm in Resources */ = {isa = PBXBuildFile; fileRef = FC35964322DB85B9007DD759 /* bgm */; };
+		FC35964922DBA143007DD759 /* PlayRecords.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC35964722DBA143007DD759 /* PlayRecords.xcdatamodeld */; };
+		FC3BAE6822BE68A20025FC2C /* PlayFullKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3BAE6622BE68A20025FC2C /* PlayFullKeyboardViewController.swift */; };
+		FC71C7F622B217470098D9BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71C7F522B217470098D9BE /* AppDelegate.swift */; };
+		FC71C7FB22B217470098D9BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC71C7F922B217470098D9BE /* Main.storyboard */; };
+		FC71C7FD22B2174A0098D9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC71C7FC22B2174A0098D9BE /* Assets.xcassets */; };
+		FC71C80022B2174A0098D9BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC71C7FE22B2174A0098D9BE /* LaunchScreen.storyboard */; };
+		FC71C80B22B2174A0098D9BE /* utjamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71C80A22B2174A0098D9BE /* utjamTests.swift */; };
+		FC71C81622B2174A0098D9BE /* utjamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71C81522B2174A0098D9BE /* utjamUITests.swift */; };
+		FC7A27E822EB58B600EB4DD4 /* PlayFlatPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7A27E722EB58B600EB4DD4 /* PlayFlatPadViewController.swift */; };
+		FC8F337E231948D7007BCA65 /* 2688-1242.png in Resources */ = {isa = PBXBuildFile; fileRef = FC8F337D231948D7007BCA65 /* 2688-1242.png */; };
+		FC9D80C32314488E00EC8A34 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9D80C22314488E00EC8A34 /* Utility.swift */; };
+		FCDCE1E822B32FB6006CDC01 /* sound in Resources */ = {isa = PBXBuildFile; fileRef = FCDCE1E722B32FB6006CDC01 /* sound */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC71C80722B2174A0098D9BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC71C7EA22B217470098D9BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC71C7F122B217470098D9BE;
+			remoteInfo = utjam;
+		};
+		FC71C81222B2174A0098D9BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC71C7EA22B217470098D9BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC71C7F122B217470098D9BE;
+			remoteInfo = utjam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05ADFEF7DFBFD88B9FD49FC8 /* Pods_utjamBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_utjamBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E99E5B73B0F52B92092890B /* Pods-utjamBluetoothUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-utjamBluetoothUITests.release.xcconfig"; path = "Target Support Files/Pods-utjamBluetoothUITests/Pods-utjamBluetoothUITests.release.xcconfig"; sourceTree = "<group>"; };
+		55F3BA29741858DB233068B1 /* Pods-utjamBluetooth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-utjamBluetooth.debug.xcconfig"; path = "Target Support Files/Pods-utjamBluetooth/Pods-utjamBluetooth.debug.xcconfig"; sourceTree = "<group>"; };
+		76740E6B0A345911ADB7C005 /* Pods-utjamBluetoothUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-utjamBluetoothUITests.debug.xcconfig"; path = "Target Support Files/Pods-utjamBluetoothUITests/Pods-utjamBluetoothUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9086760BA88285789629E49B /* Pods_utjamBluetoothTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_utjamBluetoothTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB04BF7FF8DBF2F8AD29BB0B /* Pods_utjamBluetoothUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_utjamBluetoothUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E594DE74D126A0615CAA5F3C /* Pods-utjamBluetoothTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-utjamBluetoothTests.release.xcconfig"; path = "Target Support Files/Pods-utjamBluetoothTests/Pods-utjamBluetoothTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC35D44E22F6D24D00332CA2 /* 1p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1p.png; sourceTree = "<group>"; };
+		EC35D44F22F6D24D00332CA2 /* back_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_base.png; sourceTree = "<group>"; };
+		EC35D45022F6D24D00332CA2 /* back_drum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_drum.png; sourceTree = "<group>"; };
+		EC35D45222F6D24D00332CA2 /* back_pf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_pf.png; sourceTree = "<group>"; };
+		EC35D45B22FD85AE00332CA2 /* 2p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2p.png; sourceTree = "<group>"; };
+		EC35D45D22FD8CD500332CA2 /* OptionSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSelectViewController.swift; sourceTree = "<group>"; };
+		ECB01AC123092BC500676F70 /* Menu.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Menu.plist; sourceTree = "<group>"; };
+		ECB01ADA230949D500676F70 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		ECB01AE1230BF25C00676F70 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
+		ECB8E96722CDBF8B00441304 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		ECCA4E132307FEE300EFA6BA /* TutorialSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialSummaryViewController.swift; sourceTree = "<group>"; };
+		ECCD2A9923152024009C3B76 /* NativeAdView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
+		ECF03F6D22D4499E003CDDF6 /* BluetoothService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothService.swift; sourceTree = "<group>"; };
+		F2007269FFB742E6AC92CE88 /* Pods-utjamBluetoothTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-utjamBluetoothTests.debug.xcconfig"; path = "Target Support Files/Pods-utjamBluetoothTests/Pods-utjamBluetoothTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F676DF6E166F5061347896AF /* Pods-utjamBluetooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-utjamBluetooth.release.xcconfig"; path = "Target Support Files/Pods-utjamBluetooth/Pods-utjamBluetooth.release.xcconfig"; sourceTree = "<group>"; };
+		FC32FF9922FD2FC600D68471 /* Tutorial.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tutorial.plist; sourceTree = "<group>"; };
+		FC35961722DB84C4007DD759 /* Utility.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Utility.plist; sourceTree = "<group>"; };
+		FC35964322DB85B9007DD759 /* bgm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bgm; sourceTree = "<group>"; };
+		FC35964822DBA143007DD759 /* PlayRecords.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlayRecords.xcdatamodel; sourceTree = "<group>"; };
+		FC3BAE6622BE68A20025FC2C /* PlayFullKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayFullKeyboardViewController.swift; sourceTree = "<group>"; };
+		FC71C7F222B217470098D9BE /* utjamBluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = utjamBluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC71C7F522B217470098D9BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC71C7FA22B217470098D9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC71C7FC22B2174A0098D9BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC71C7FF22B2174A0098D9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC71C80122B2174A0098D9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC71C80622B2174A0098D9BE /* utjamBluetoothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = utjamBluetoothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC71C80A22B2174A0098D9BE /* utjamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utjamTests.swift; sourceTree = "<group>"; };
+		FC71C80C22B2174A0098D9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC71C81122B2174A0098D9BE /* utjamBluetoothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = utjamBluetoothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC71C81522B2174A0098D9BE /* utjamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utjamUITests.swift; sourceTree = "<group>"; };
+		FC71C81722B2174A0098D9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC71C82822B2A9370098D9BE /* utjam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "utjam-Bridging-Header.h"; sourceTree = "<group>"; };
+		FC7A27E722EB58B600EB4DD4 /* PlayFlatPadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayFlatPadViewController.swift; sourceTree = "<group>"; };
+		FC8F337D231948D7007BCA65 /* 2688-1242.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2688-1242.png"; sourceTree = "<group>"; };
+		FC9D80C22314488E00EC8A34 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		FCDCE1E722B32FB6006CDC01 /* sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sound; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC71C7EF22B217470098D9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB01ADB230949D500676F70 /* WebKit.framework in Frameworks */,
+				ECB8E96822CDBF8B00441304 /* MultipeerConnectivity.framework in Frameworks */,
+				AAF258919C8064E21335CCB3 /* Pods_utjamBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC71C80322B2174A0098D9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310D4CBB1516112CECC72254 /* Pods_utjamBluetoothTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC71C80E22B2174A0098D9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F1AE8D8AF92D1EF30E9D107 /* Pods_utjamBluetoothUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BF7BE7BE38D480FD6343476 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55F3BA29741858DB233068B1 /* Pods-utjamBluetooth.debug.xcconfig */,
+				F676DF6E166F5061347896AF /* Pods-utjamBluetooth.release.xcconfig */,
+				F2007269FFB742E6AC92CE88 /* Pods-utjamBluetoothTests.debug.xcconfig */,
+				E594DE74D126A0615CAA5F3C /* Pods-utjamBluetoothTests.release.xcconfig */,
+				76740E6B0A345911ADB7C005 /* Pods-utjamBluetoothUITests.debug.xcconfig */,
+				0E99E5B73B0F52B92092890B /* Pods-utjamBluetoothUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC35D44C22F6D24D00332CA2 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				EC35D44E22F6D24D00332CA2 /* 1p.png */,
+				EC35D45B22FD85AE00332CA2 /* 2p.png */,
+				EC35D44F22F6D24D00332CA2 /* back_base.png */,
+				EC35D45022F6D24D00332CA2 /* back_drum.png */,
+				FC8F337D231948D7007BCA65 /* 2688-1242.png */,
+				EC35D45222F6D24D00332CA2 /* back_pf.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		ECB8E96622CDBF8A00441304 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECB01ADA230949D500676F70 /* WebKit.framework */,
+				ECB8E96722CDBF8B00441304 /* MultipeerConnectivity.framework */,
+				05ADFEF7DFBFD88B9FD49FC8 /* Pods_utjamBluetooth.framework */,
+				9086760BA88285789629E49B /* Pods_utjamBluetoothTests.framework */,
+				DB04BF7FF8DBF2F8AD29BB0B /* Pods_utjamBluetoothUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC71C7E922B217470098D9BE = {
+			isa = PBXGroup;
+			children = (
+				FC71C7F422B217470098D9BE /* utjam */,
+				FC71C80922B2174A0098D9BE /* utjamTests */,
+				FC71C81422B2174A0098D9BE /* utjamUITests */,
+				FC71C7F322B217470098D9BE /* Products */,
+				FC71C82822B2A9370098D9BE /* utjam-Bridging-Header.h */,
+				ECB8E96622CDBF8A00441304 /* Frameworks */,
+				5BF7BE7BE38D480FD6343476 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FC71C7F322B217470098D9BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC71C7F222B217470098D9BE /* utjamBluetooth.app */,
+				FC71C80622B2174A0098D9BE /* utjamBluetoothTests.xctest */,
+				FC71C81122B2174A0098D9BE /* utjamBluetoothUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC71C7F422B217470098D9BE /* utjam */ = {
+			isa = PBXGroup;
+			children = (
+				FC71C7F522B217470098D9BE /* AppDelegate.swift */,
+				EC35D45D22FD8CD500332CA2 /* OptionSelectViewController.swift */,
+				FC3BAE6622BE68A20025FC2C /* PlayFullKeyboardViewController.swift */,
+				FC9D80C22314488E00EC8A34 /* Utility.swift */,
+				FC7A27E722EB58B600EB4DD4 /* PlayFlatPadViewController.swift */,
+				ECCA4E132307FEE300EFA6BA /* TutorialSummaryViewController.swift */,
+				FC71C7F922B217470098D9BE /* Main.storyboard */,
+				ECCD2A9923152024009C3B76 /* NativeAdView.xib */,
+				ECF03F6D22D4499E003CDDF6 /* BluetoothService.swift */,
+				FC35964722DBA143007DD759 /* PlayRecords.xcdatamodeld */,
+				ECB01AE1230BF25C00676F70 /* html */,
+				EC35D44C22F6D24D00332CA2 /* image */,
+				FC35964322DB85B9007DD759 /* bgm */,
+				FC71C7FC22B2174A0098D9BE /* Assets.xcassets */,
+				FCDCE1E722B32FB6006CDC01 /* sound */,
+				FC71C7FE22B2174A0098D9BE /* LaunchScreen.storyboard */,
+				FC71C80122B2174A0098D9BE /* Info.plist */,
+				FC32FF9922FD2FC600D68471 /* Tutorial.plist */,
+				ECB01AC123092BC500676F70 /* Menu.plist */,
+				FC35961722DB84C4007DD759 /* Utility.plist */,
+			);
+			path = utjam;
+			sourceTree = "<group>";
+		};
+		FC71C80922B2174A0098D9BE /* utjamTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC71C80A22B2174A0098D9BE /* utjamTests.swift */,
+				FC71C80C22B2174A0098D9BE /* Info.plist */,
+			);
+			path = utjamTests;
+			sourceTree = "<group>";
+		};
+		FC71C81422B2174A0098D9BE /* utjamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC71C81522B2174A0098D9BE /* utjamUITests.swift */,
+				FC71C81722B2174A0098D9BE /* Info.plist */,
+			);
+			path = utjamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC71C7F122B217470098D9BE /* utjamBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC71C81A22B2174A0098D9BE /* Build configuration list for PBXNativeTarget "utjamBluetooth" */;
+			buildPhases = (
+				476E37E1E1B6E0C180A9D031 /* [CP] Check Pods Manifest.lock */,
+				FC71C7EE22B217470098D9BE /* Sources */,
+				FC71C7EF22B217470098D9BE /* Frameworks */,
+				FC71C7F022B217470098D9BE /* Resources */,
+				AB4AD00DFCC4686101D23C33 /* [CP] Copy Pods Resources */,
+				A706BF5A14CB7736DF8FEE4B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = utjamBluetooth;
+			productName = utjam;
+			productReference = FC71C7F222B217470098D9BE /* utjamBluetooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC71C80522B2174A0098D9BE /* utjamBluetoothTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC71C81D22B2174A0098D9BE /* Build configuration list for PBXNativeTarget "utjamBluetoothTests" */;
+			buildPhases = (
+				9FDAD4F7B5DBBF7C3280B36B /* [CP] Check Pods Manifest.lock */,
+				FC71C80222B2174A0098D9BE /* Sources */,
+				FC71C80322B2174A0098D9BE /* Frameworks */,
+				FC71C80422B2174A0098D9BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC71C80822B2174A0098D9BE /* PBXTargetDependency */,
+			);
+			name = utjamBluetoothTests;
+			productName = utjamTests;
+			productReference = FC71C80622B2174A0098D9BE /* utjamBluetoothTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC71C81022B2174A0098D9BE /* utjamBluetoothUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC71C82022B2174A0098D9BE /* Build configuration list for PBXNativeTarget "utjamBluetoothUITests" */;
+			buildPhases = (
+				FEF78488FA2D61007F36E3C0 /* [CP] Check Pods Manifest.lock */,
+				FC71C80D22B2174A0098D9BE /* Sources */,
+				FC71C80E22B2174A0098D9BE /* Frameworks */,
+				FC71C80F22B2174A0098D9BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC71C81322B2174A0098D9BE /* PBXTargetDependency */,
+			);
+			name = utjamBluetoothUITests;
+			productName = utjamUITests;
+			productReference = FC71C81122B2174A0098D9BE /* utjamBluetoothUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC71C7EA22B217470098D9BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "加納大地";
+				TargetAttributes = {
+					FC71C7F122B217470098D9BE = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					FC71C80522B2174A0098D9BE = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FC71C7F122B217470098D9BE;
+					};
+					FC71C81022B2174A0098D9BE = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FC71C7F122B217470098D9BE;
+					};
+				};
+			};
+			buildConfigurationList = FC71C7ED22B217470098D9BE /* Build configuration list for PBXProject "utjamBluetooth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC71C7E922B217470098D9BE;
+			productRefGroup = FC71C7F322B217470098D9BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC71C7F122B217470098D9BE /* utjamBluetooth */,
+				FC71C80522B2174A0098D9BE /* utjamBluetoothTests */,
+				FC71C81022B2174A0098D9BE /* utjamBluetoothUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC71C7F022B217470098D9BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC71C80022B2174A0098D9BE /* LaunchScreen.storyboard in Resources */,
+				EC35D45522F6D24D00332CA2 /* back_base.png in Resources */,
+				FC8F337E231948D7007BCA65 /* 2688-1242.png in Resources */,
+				ECCD2A9A23152024009C3B76 /* NativeAdView.xib in Resources */,
+				EC35D45622F6D24D00332CA2 /* back_drum.png in Resources */,
+				FC32FF9A22FD2FC600D68471 /* Tutorial.plist in Resources */,
+				FC71C7FD22B2174A0098D9BE /* Assets.xcassets in Resources */,
+				FCDCE1E822B32FB6006CDC01 /* sound in Resources */,
+				EC35D45422F6D24D00332CA2 /* 1p.png in Resources */,
+				FC35964422DB85B9007DD759 /* bgm in Resources */,
+				ECB01AE2230BF25C00676F70 /* html in Resources */,
+				FC71C7FB22B217470098D9BE /* Main.storyboard in Resources */,
+				EC35D45C22FD85AE00332CA2 /* 2p.png in Resources */,
+				EC35D45822F6D24D00332CA2 /* back_pf.png in Resources */,
+				FC35961822DB84C4007DD759 /* Utility.plist in Resources */,
+				ECB01AC223092BC500676F70 /* Menu.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC71C80422B2174A0098D9BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC71C80F22B2174A0098D9BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		476E37E1E1B6E0C180A9D031 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-utjamBluetooth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FDAD4F7B5DBBF7C3280B36B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-utjamBluetoothTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A706BF5A14CB7736DF8FEE4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-utjamBluetooth/Pods-utjamBluetooth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-utjamBluetooth/Pods-utjamBluetooth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-utjamBluetooth/Pods-utjamBluetooth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB4AD00DFCC4686101D23C33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-utjamBluetooth/Pods-utjamBluetooth-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-utjamBluetooth/Pods-utjamBluetooth-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-utjamBluetooth/Pods-utjamBluetooth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF78488FA2D61007F36E3C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-utjamBluetoothUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC71C7EE22B217470098D9BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3BAE6822BE68A20025FC2C /* PlayFullKeyboardViewController.swift in Sources */,
+				EC35D45E22FD8CD500332CA2 /* OptionSelectViewController.swift in Sources */,
+				FC35964922DBA143007DD759 /* PlayRecords.xcdatamodeld in Sources */,
+				FC9D80C32314488E00EC8A34 /* Utility.swift in Sources */,
+				FC71C7F622B217470098D9BE /* AppDelegate.swift in Sources */,
+				ECF03F6E22D4499E003CDDF6 /* BluetoothService.swift in Sources */,
+				ECCA4E142307FEE300EFA6BA /* TutorialSummaryViewController.swift in Sources */,
+				FC7A27E822EB58B600EB4DD4 /* PlayFlatPadViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC71C80222B2174A0098D9BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC71C80B22B2174A0098D9BE /* utjamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC71C80D22B2174A0098D9BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC71C81622B2174A0098D9BE /* utjamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC71C80822B2174A0098D9BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC71C7F122B217470098D9BE /* utjamBluetooth */;
+			targetProxy = FC71C80722B2174A0098D9BE /* PBXContainerItemProxy */;
+		};
+		FC71C81322B2174A0098D9BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC71C7F122B217470098D9BE /* utjamBluetooth */;
+			targetProxy = FC71C81222B2174A0098D9BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC71C7F922B217470098D9BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC71C7FA22B217470098D9BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC71C7FE22B2174A0098D9BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC71C7FF22B2174A0098D9BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC71C81822B2174A0098D9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC71C81922B2174A0098D9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC71C81B22B2174A0098D9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F3BA29741858DB233068B1 /* Pods-utjamBluetooth.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72BZMRZDV7;
+				INFOPLIST_FILE = utjam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kanohdaichi.utjam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "utjam-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC71C81C22B2174A0098D9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F676DF6E166F5061347896AF /* Pods-utjamBluetooth.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72BZMRZDV7;
+				INFOPLIST_FILE = utjam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kanohdaichi.utjam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "utjam-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC71C81E22B2174A0098D9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2007269FFB742E6AC92CE88 /* Pods-utjamBluetoothTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = utjamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kanohdaichi.utjamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/utjamBluetooth.app/utjamBluetooth";
+			};
+			name = Debug;
+		};
+		FC71C81F22B2174A0098D9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E594DE74D126A0615CAA5F3C /* Pods-utjamBluetoothTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = utjamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kanohdaichi.utjamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/utjamBluetooth.app/utjamBluetooth";
+			};
+			name = Release;
+		};
+		FC71C82122B2174A0098D9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76740E6B0A345911ADB7C005 /* Pods-utjamBluetoothUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = utjamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kanohdaichi.utjamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = utjam;
+			};
+			name = Debug;
+		};
+		FC71C82222B2174A0098D9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E99E5B73B0F52B92092890B /* Pods-utjamBluetoothUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = utjamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kanohdaichi.utjamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = utjam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC71C7ED22B217470098D9BE /* Build configuration list for PBXProject "utjamBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC71C81822B2174A0098D9BE /* Debug */,
+				FC71C81922B2174A0098D9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC71C81A22B2174A0098D9BE /* Build configuration list for PBXNativeTarget "utjamBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC71C81B22B2174A0098D9BE /* Debug */,
+				FC71C81C22B2174A0098D9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC71C81D22B2174A0098D9BE /* Build configuration list for PBXNativeTarget "utjamBluetoothTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC71C81E22B2174A0098D9BE /* Debug */,
+				FC71C81F22B2174A0098D9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC71C82022B2174A0098D9BE /* Build configuration list for PBXNativeTarget "utjamBluetoothUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC71C82122B2174A0098D9BE /* Debug */,
+				FC71C82222B2174A0098D9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC35964722DBA143007DD759 /* PlayRecords.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC35964822DBA143007DD759 /* PlayRecords.xcdatamodel */,
+			);
+			currentVersion = FC35964822DBA143007DD759 /* PlayRecords.xcdatamodel */;
+			path = PlayRecords.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FC71C7EA22B217470098D9BE /* Project object */;
+}

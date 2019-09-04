@@ -1,0 +1,6 @@
+framework module Pods_utjamBluetoothUITests {
+  umbrella header "Pods-utjamBluetoothUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

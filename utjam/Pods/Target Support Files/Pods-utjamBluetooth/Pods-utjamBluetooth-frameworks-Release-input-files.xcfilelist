@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-utjamBluetooth/Pods-utjamBluetooth-frameworks.sh
+${BUILT_PRODUCTS_DIR}/MYPassthrough/MYPassthrough.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework

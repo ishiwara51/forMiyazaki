@@ -1,0 +1,6 @@
+framework module MYPassthrough {
+  umbrella header "MYPassthrough-umbrella.h"
+
+  export *
+  module * { export * }
+}
