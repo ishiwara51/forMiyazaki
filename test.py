@@ -15,23 +15,29 @@ gen.FLAGS.backing_chords = 'Dmaj7'
 gen.FLAGS.qpm = 120
 
 @app.route('/generate', methods=['POST'])
+#httpRequestでここが実行される（ここで端末の演奏データを受け取る）
 def generate():   
     print(request.form.get('primer_melody'))
     print(request.form.get('backing_chords'))
     print(request.form.get('qpm'))
+    #内部の数値を見る場所
 
-    if request.form.get('primer_melody') and request.form.get('backing_chords'):
+    if request.form.get('primer_melody') and request.form.get('backing_chords') and request.form.get('steps_per_chords'):
         gen.FLAGS.primer_melody = request.form.get('primer_melody')
         gen.FLAGS.backing_chords = request.form.get('backing_chords')
+        gen.FLAGS.steps_per_chords = int(request.form.get('steps_per_chords'))
+        #ここを編集する
     if request.form.get('qpm'):
         gen.FLAGS.qpm = int(request.form.get('qpm'))
 
     return_str = gen.main("")
 
+
     gen.FLAGS.primer_melody = "[60]"
     gen.FLAGS.backing_chords = 'Dmaj7'
+    gen.FLAGS.steps_per_chords = 16
     gen.FLAGS.qpm = 120
-
+#ここも忘れずに編集する
     return return_str
 
 if __name__ == '__main__':

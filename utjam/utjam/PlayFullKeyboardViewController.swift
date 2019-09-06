@@ -509,6 +509,9 @@ class PlayFullKeyboardViewController: UIViewController, AVAudioPlayerDelegate{
                     self.primerMelody = self.primerMelody.replacingOccurrences(of: "[-2", with: "[60") + "]"
                     self.primerMelody = self.primerMelody.replacingOccurrences(of: "[, ", with: "[") + "]"
                     AppDelegate().httpRequest(route: "generate", postBodyStr: "primer_melody=\(self.primerMelody)&backing_chords=\(self.backingChords)", calledBy: self)
+                    
+                    //ここで新しく使った演奏変数を受け取る
+                    
                     self.primerMelody = self.primerMelody.replacingOccurrences(of: "]", with: "")
                 }
             }
