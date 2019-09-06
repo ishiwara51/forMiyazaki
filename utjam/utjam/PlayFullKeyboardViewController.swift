@@ -433,6 +433,7 @@ class PlayFullKeyboardViewController: UIViewController, AVAudioPlayerDelegate{
         self.allTimers.append(bgmTimer)
         if doSession! {
             let aiTimer = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true, block: {(aiTimer) in
+                
                 if self.aiPlay != nil {
                     //print("aiplay: \(self.aiPlay)")
                 }
@@ -506,6 +507,7 @@ class PlayFullKeyboardViewController: UIViewController, AVAudioPlayerDelegate{
                 }
                 DispatchQueue.global().async {
                     self.primerMelody = self.primerMelody.replacingOccurrences(of: "[-2", with: "[60") + "]"
+                    self.primerMelody = self.primerMelody.replacingOccurrences(of: "[, ", with: "[") + "]"
                     AppDelegate().httpRequest(route: "generate", postBodyStr: "primer_melody=\(self.primerMelody)&backing_chords=\(self.backingChords)", calledBy: self)
                     self.primerMelody = self.primerMelody.replacingOccurrences(of: "]", with: "")
                 }
