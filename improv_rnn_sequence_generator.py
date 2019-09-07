@@ -99,7 +99,7 @@ class ImprovRnnSequenceGenerator(mm.BaseSequenceGenerator):
     tempos {
       qpm: 120.0
     }
-    notes {
+    notes {git
       pitch: 60
       velocity: 100
       end_time: 0.125
