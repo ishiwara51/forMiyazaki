@@ -59,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func httpRequest(route:String, postBodyStr:String, calledBy:UIViewController? = nil, callTag:Int = 0) -> String? {
-        let url = URL(string: "http://0.0.0.0:5000/" + route)
+        let url = URL(string: "http://52.20.57.114/" + route)
         var request = URLRequest(url: url!)
         var returnstr = ""
         // POSTを指定
