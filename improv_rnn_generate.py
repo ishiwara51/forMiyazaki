@@ -89,18 +89,18 @@ tf.app.flags.DEFINE_float(
     'given, the qpm from that will override this flag. If qpm is None, qpm '
     'will default to 120.')
 tf.app.flags.DEFINE_float(
-    'temperature', 1.0,
+    'temperature', 0.7,
     'The randomness of the generated melodies. 1.0 uses the unaltered softmax '
     'probabilities, greater than 1.0 makes melodies more random, less than 1.0 '
     'makes melodies less random.')
 tf.app.flags.DEFINE_integer(
-    'beam_size', 1,
+    'beam_size', 3,
     'The beam size to use for beam search when generating melodies.')
 tf.app.flags.DEFINE_integer(
-    'branch_factor', 1,
+    'branch_factor', 2,
     'The branch factor to use for beam search when generating melodies.')
 tf.app.flags.DEFINE_integer(
-    'steps_per_iteration', 1,
+    'steps_per_iteration', 2,
     'The number of melody steps to take per beam search iteration.')
 tf.app.flags.DEFINE_string(
     'log', 'INFO',
