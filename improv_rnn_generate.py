@@ -58,7 +58,7 @@ tf.app.flags.DEFINE_integer(
     'The number of lead sheets to generate. One MIDI file will be created for '
     'each.')
 tf.app.flags.DEFINE_integer(
-    'steps_per_chord', 16,
+    'steps_per_chord', 36,
     'The number of melody steps to take per backing chord. Each step is a 16th '
     'of a bar, so if backing_chords = "C G Am F" and steps_per_chord = 16, '
     'four bars will be generated.')

@@ -455,6 +455,7 @@ class PlayFullKeyboardViewController: UIViewController, AVAudioPlayerDelegate{
                         self.primerMelody = "["
                     }
                     if self.primerMelodyValue != ""{
+                        var t:Double = Double(self.primerMelodyValue)! / Double(self.steps_per_chord / 16)
                         self.primerMelody = self.primerMelody + ", " + self.primerMelodyValue
                     }else if self.primerMelody == "["{
                         self.primerMelody = self.primerMelody + "-2"
