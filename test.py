@@ -25,7 +25,7 @@ def generate():
     if request.form.get('primer_melody') and request.form.get('backing_chords') and request.form.get('steps_per_chord'):
         gen.FLAGS.primer_melody = request.form.get('primer_melody')
         gen.FLAGS.backing_chords = request.form.get('backing_chords')
-        gen.FLAGS.steps_per_chord = request.form.get('steps_per_chord')
+        gen.FLAGS.steps_per_chord = int(request.form.get('steps_per_chord'))
 
         #ここを編集する
     if request.form.get('qpm'):

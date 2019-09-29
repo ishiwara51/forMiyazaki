@@ -68,7 +68,7 @@ class PlayFullKeyboardViewController: UIViewController, AVAudioPlayerDelegate{
     
     var primerMelody:String = "[" // To be posted to magenta in ec2 server.
     var primerMelodyValue:String = "" // To be posted to magenta in ec2 server.
-    var temperature:Float = 1.0  // To be posted to magenta in ec2 server.
+    var steps_per_chord:Int = 16  // To be posted to magenta in ec2 server.
     
     var chordList:Array<String> = []
     var backingChords = ""
@@ -512,7 +512,7 @@ class PlayFullKeyboardViewController: UIViewController, AVAudioPlayerDelegate{
                     self.primerMelody = self.primerMelody.replacingOccurrences(of: "[, ", with: "[") + "]"
                     print(self.primerMelody)
                     print(self.backingChords)
-                    AppDelegate().httpRequest(route: "generate", postBodyStr: "primer_melody=\(self.primerMelody)&backing_chords=\(self.backingChords)", calledBy: self)
+                    AppDelegate().httpRequest(route: "generate", postBodyStr: "primer_melody=\(self.primerMelody)&backing_chords=\(self.backingChords)&steps_per_chord=\(self.steps_per_chord)", calledBy: self)
                     self.primerMelody = self.primerMelody.replacingOccurrences(of: "]", with: "")
                 }
             }
