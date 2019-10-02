@@ -36,7 +36,7 @@ def generate():
 
     gen.FLAGS.primer_melody = "[60]"
     gen.FLAGS.backing_chords = 'Dmaj7'
-    gen.FLAGS.temperature = 0.7
+    gen.FLAGS.steps_per_chord = 36
     gen.FLAGS.qpm = 120
 #ここも忘れずに編集する
     return return_str

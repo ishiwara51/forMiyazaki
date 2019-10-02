@@ -68,7 +68,7 @@ class PlayFullKeyboardViewController: UIViewController, AVAudioPlayerDelegate{
     
     var primerMelody:String = "[" // To be posted to magenta in ec2 server.
     var primerMelodyValue:String = "" // To be posted to magenta in ec2 server.
-    var steps_per_chord:Int = 16  // To be posted to magenta in ec2 server.
+    var steps_per_chord:Int = 36  // To be posted to magenta in ec2 server.
     
     var chordList:Array<String> = []
     var backingChords = ""
@@ -443,7 +443,7 @@ class PlayFullKeyboardViewController: UIViewController, AVAudioPlayerDelegate{
                     self.keyPushed(senderTag: self.aiPlay?[self.timeNowAI]![1] as! Int)
                     print("ai played \(self.aiPlay?[self.timeNowAI]![1] as! Int)")
                 }
-                self.timeNowAI += 0.25
+                self.timeNowAI += 0.25 * Double(self.steps_per_chord / 16)
             })
             allTimers.append(aiTimer)
             let magentaTimer = Timer.scheduledTimer(withTimeInterval: TimeInterval((60/bpm)/4), repeats: true, block: {(magentaTimer) in
@@ -455,7 +455,6 @@ class PlayFullKeyboardViewController: UIViewController, AVAudioPlayerDelegate{
                         self.primerMelody = "["
                     }
                     if self.primerMelodyValue != ""{
-                        var t:Double = Double(self.primerMelodyValue)! / Double(self.steps_per_chord / 16)
                         self.primerMelody = self.primerMelody + ", " + self.primerMelodyValue
                     }else if self.primerMelody == "["{
                         self.primerMelody = self.primerMelody + "-2"
@@ -515,6 +514,7 @@ class PlayFullKeyboardViewController: UIViewController, AVAudioPlayerDelegate{
                     print(self.backingChords)
                     AppDelegate().httpRequest(route: "generate", postBodyStr: "primer_melody=\(self.primerMelody)&backing_chords=\(self.backingChords)&steps_per_chord=\(self.steps_per_chord)", calledBy: self)
                     self.primerMelody = self.primerMelody.replacingOccurrences(of: "]", with: "")
+                
                 }
             }
             if self.barNow % 4 == 0 && self.barNow != 0 {

@@ -89,7 +89,7 @@ tf.app.flags.DEFINE_float(
     'given, the qpm from that will override this flag. If qpm is None, qpm '
     'will default to 120.')
 tf.app.flags.DEFINE_float(
-    'temperature', 0.7,
+    'temperature', 0.9,
     'The randomness of the generated melodies. 1.0 uses the unaltered softmax '
     'probabilities, greater than 1.0 makes melodies more random, less than 1.0 '
     'makes melodies less random.')
