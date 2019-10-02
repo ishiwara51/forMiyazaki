@@ -68,7 +68,7 @@ class PlayFullKeyboardViewController: UIViewController, AVAudioPlayerDelegate{
     
     var primerMelody:String = "[" // To be posted to magenta in ec2 server.
     var primerMelodyValue:String = "" // To be posted to magenta in ec2 server.
-    var steps_per_chord:Int = 36  // To be posted to magenta in ec2 server.
+    var steps_per_chord:Int = 32  // To be posted to magenta in ec2 server.
     
     var chordList:Array<String> = []
     var backingChords = ""
@@ -434,7 +434,8 @@ class PlayFullKeyboardViewController: UIViewController, AVAudioPlayerDelegate{
         bgmTimer.fire()
         self.allTimers.append(bgmTimer)
         if doSession! {
-            let aiTimer = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: true, block: {(aiTimer) in
+            let t = 0.25 / Double(self.steps_per_chord / 16)
+            let aiTimer = Timer.scheduledTimer(withTimeInterval: t, repeats: true, block: {(aiTimer) in
                 
                 if self.aiPlay != nil {
                     //print("aiplay: \(self.aiPlay)")
@@ -443,7 +444,7 @@ class PlayFullKeyboardViewController: UIViewController, AVAudioPlayerDelegate{
                     self.keyPushed(senderTag: self.aiPlay?[self.timeNowAI]![1] as! Int)
                     print("ai played \(self.aiPlay?[self.timeNowAI]![1] as! Int)")
                 }
-                self.timeNowAI += 0.25 * Double(self.steps_per_chord / 16)
+                self.timeNowAI += 0.25 //* Double(self.steps_per_chord / 16)
             })
             allTimers.append(aiTimer)
             let magentaTimer = Timer.scheduledTimer(withTimeInterval: TimeInterval((60/bpm)/4), repeats: true, block: {(magentaTimer) in
